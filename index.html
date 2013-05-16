@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selección</title>
+	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
+	<link rel="stylesheet" type="text/css" href="estilos/estilosGenerales.css">
+	<script type="text/javascript">
+	$(function() {
+		$("#datepicker").datepicker();
+		$("busqueda").autocomplete();
+	});
+
+
+	</script>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+			<input type="text" id="busqueda">
+		</nav>
+	</header>
+	<p>Date:<input type="text" id="datepicker"></p>
+</body>
+</html>

@@ -1,35 +1,46 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Selección</title>
-	<link rel="stylesheet" href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" />
-	<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-	<script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
-	<link rel="stylesheet" type="text/css" href="estilos/estilosGenerales.css">
-	<script type="text/javascript">
-	$(function() {
-		$("#datepicker").datepicker();
-		$("busqueda").autocomplete();
-	});
-
-
-	</script>
-</head>
-<body>
-	<header>
-		<nav>
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-			<input type="text" id="busqueda">
-		</nav>
-	</header>
-	<p>Date:<input type="text" id="datepicker"></p>
-</body>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>impaq</title>
+  </head>
+  <body>
+    <header>
+      <div id="logo"></div>
+      <nav>
+        <ul>
+          <li>link1
+            <ul class="submenu">
+              <li>subitem</li>
+              <li>subtiem2</li>
+              <li>subitem3</li>
+              <li>subitem4</li>
+            </ul>
+          </li>
+          <li>link1
+            <ul class="submenu">
+              <li>subitem</li>
+              <li>subtiem2</li>
+              <li>subitem3</li>
+              <li>subitem4</li>
+            </ul>
+          </li>
+          <li>link1
+            <ul class="submenu">
+              <li>subitem</li>
+              <li>subtiem2</li>
+            </ul>
+          </li>
+          <li>link2
+            <ul class="submenu">
+              <li>subitem</li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div id="contenedor"></div>
+    </section>
+    <footer><a href="mailto:info@impaq.pe"></a></footer>
+  </body>
 </html>

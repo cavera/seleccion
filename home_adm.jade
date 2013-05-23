@@ -1,0 +1,94 @@
+!!!
+html
+	head
+		meta(charset='utf-8')
+		meta(name='viewport',content='width=device-width, initial-scale=1.0')
+		//- bootstrap
+		link(href='css/bootstrap.css',rel='stylesheet',media='screen')
+		link(href='css/layout.css',rel='stylesheet',media='screen')
+		title Home administrador
+	body
+		section#contenedor
+			header
+				#logo
+				nav
+					ul#menu
+						li.item
+							p.typicn.group
+							span.i_uno Postulantes
+							ul.submenu1
+								li.submenu_item
+									p.typicn.plus
+									a(href='#') Crear o cargar nuevo
+								li.submenu_item
+									p.typicn.list
+									a(href='#') Listar postulantes
+								li.submenu_item
+									p.typicn.refresh
+									a(href='#') Reprogramar
+								li.submenu_item
+									p.typicn.export
+									a(href='#') Resultados
+						li.item
+							p.typicn.radar
+							span.i_dos Cargos
+							ul.submenu1
+								li.submenu_item
+									p.typicn.plus
+									a(href='#') Nuevo cargo
+								li.submenu_item
+									p.typicn.list
+									a(href='#') Listar cargos
+						li.item
+							p.typicn.edit
+							span.i_tres Evaluación
+							ul.submenu1
+								li.submenu_item
+									p.typicn.plus
+									a(href='#') Nueva carga o evaluación
+								li.submenu_item
+									p.typicn.write
+									a(href='#') Editar evaluación
+						li.item
+							p.typicn.list
+							span.i_cuatro Reportes
+							ul.submenu1
+								li.submenu_item
+									p.typicn.list
+									a(href='#') Reporte
+						li#espacioUsuario
+							#nombreUsuario
+								p Super administrador
+							#salir
+								p.typicn.times
+							#invitaciones
+									p 
+										span.numero 120
+										|Invitaciones pendientes
+			section#contenido
+				img(src='img/home_e.jpg')
+				#grupoInfo
+					.infoIndicador
+						p.numero 80
+						p.typicn.group
+						p.
+							Postulantes evaluados en el mes de marzo.
+					.infoIndicador
+						p.numero 60
+						p.typicn.cog
+						p.
+							Pruebas sicotecnicas realizadas en el mes de marzo.
+					.infoIndicador
+						p.numero 75
+						p.typicn.edit
+						p.
+							Pruebas sicotecnicas realizadas en el mes de marzo.
+			footer
+				.icono
+					p.typicn.info
+				a(href='mailto:info@impaq.pe') info: info@impaq.pe
+				p.infoText
+			script(src='http://code.jquery.com/jquery.js')
+			script(src='js/bootstrap.min.js')
+			script(src='js/menu.js')
+

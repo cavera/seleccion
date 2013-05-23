@@ -1,0 +1,422 @@
+@font-face {
+  font-family: 'source_sans_proregular';
+  src: url("../fonts/sourcesanspro-regular-webfont.eot");
+  src: url("../fonts/sourcesanspro-regular-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/sourcesanspro-regular-webfont.woff") format('woff'), url("../fonts/sourcesanspro-regular-webfont.ttf") format('truetype'), url("../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'source_sans_prolight';
+  src: url("../fonts/sourcesanspro-light-webfont.eot");
+  src: url("../fonts/sourcesanspro-light-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/sourcesanspro-light-webfont.woff") format('woff'), url("../fonts/sourcesanspro-light-webfont.ttf") format('truetype'), url("../fonts/sourcesanspro-light-webfont.svg#source_sans_prolight") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'source_sans_probold';
+  src: url("../fonts/sourcesanspro-bold-webfont.eot");
+  src: url("../fonts/sourcesanspro-bold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/sourcesanspro-bold-webfont.woff") format('woff'), url("../fonts/sourcesanspro-bold-webfont.ttf") format('truetype'), url("../fonts/sourcesanspro-bold-webfont.svg#source_sans_probold") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Typicons';
+  src: url("../fonts/typicons-regular-webfont.eot");
+  src: url("../fonts/typicons-regular-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/typicons-regular-webfont.woff") format('woff'), url("../fonts/typicons-regular-webfont.ttf") format('truetype'), url("../fonts/typicons-regular-webfont.svg#TypiconsRegular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.typicn {
+  font-family: "Typicons", sans-serif;
+  font-size: 3em;
+  -webkit-font-smoothing: antialiased;
+  -o-transform: scale(1);
+  padding: 0;
+  margin: 0;
+}
+.location:before {
+  content: "A";
+}
+.phone:before {
+  content: "B";
+}
+.home:before {
+  content: "C";
+}
+.camera:before {
+  content: "D";
+}
+.left:before {
+  content: "E";
+}
+.right:before {
+  content: "F";
+}
+.up:before {
+  content: "G";
+}
+.down:before {
+  content: "H";
+}
+.refresh:before {
+  content: "I";
+}
+.sync:before {
+  content: "J";
+}
+.loop:before {
+  content: "K";
+}
+.repeat:before {
+  content: "L";
+}
+.shuffle:before {
+  content: "M";
+}
+.rss:before {
+  content: "N";
+}
+.cog:before {
+  content: "O";
+}
+.spanner:before {
+  content: "P";
+}
+.barChart:before {
+  content: "Q";
+}
+.pieChart:before {
+  content: "R";
+}
+.lineChart:before {
+  content: "S";
+}
+.views:before {
+  content: "T";
+}
+.zoomIn:before {
+  content: "V";
+}
+.zoomOut:before {
+  content: "U";
+}
+.export:before {
+  content: "W";
+}
+.user:before {
+  content: "X";
+}
+.group:before {
+  content: "Y";
+}
+.microphone:before {
+  content: "Z";
+}
+.globe:before {
+  content: "a";
+}
+.thumbsUp:before {
+  content: "b";
+}
+.thumbsDown:before {
+  content: "c";
+}
+.tag:before {
+  content: "d";
+}
+.tab:before {
+  content: "e";
+}
+.warning:before {
+  content: "f";
+}
+.tick:before {
+  content: "g";
+}
+.beta:before {
+  content: "h";
+}
+.unlock:before {
+  content: "i";
+}
+.lock:before {
+  content: "j";
+}
+.eject:before {
+  content: "k";
+}
+.move:before {
+  content: "l";
+}
+.expand:before {
+  content: "m";
+}
+.cancel:before {
+  content: "n";
+}
+.power:before {
+  content: "o";
+}
+.compass:before {
+  content: "p";
+}
+.radar:before {
+  content: "q";
+}
+.directions:before {
+  content: "r";
+}
+.pin:before {
+  content: "s";
+}
+.mute:before {
+  content: "t";
+}
+.volume:before {
+  content: "u";
+}
+.world:before {
+  content: "v";
+}
+.write:before {
+  content: "w";
+}
+.minus:before {
+  content: "x";
+}
+.equals:before {
+  content: "y";
+}
+.feed:before {
+  content: "z";
+}
+.batteryNone:before {
+  content: "0";
+}
+.batteryLow:before {
+  content: "1";
+}
+.batteryMid:before {
+  content: "2";
+}
+.batteryHigh:before {
+  content: "3";
+}
+.batteryPower:before {
+  content: "4";
+}
+.plus:before {
+  content: "5";
+}
+.times:before {
+  content: "6";
+}
+.next:before {
+  content: "7";
+}
+.previous:before {
+  content: "8";
+}
+.edit:before {
+  content: "9";
+}
+.cut:before {
+  content: "'";
+}
+.anchor:before {
+  content: "(";
+}
+.bookmark:before {
+  content: ")";
+}
+.music:before {
+  content: "*";
+}
+.puzzle:before {
+  content: "+";
+}
+.archive:before {
+  content: ",";
+}
+.mobile:before {
+  content: "-";
+}
+.contrast:before {
+  content: ".";
+}
+.brightness:before {
+  content: "/";
+}
+.flag:before {
+  content: "{";
+}
+.info:before {
+  content: "|";
+}
+.unknown:before {
+  content: "}";
+}
+.chat:before {
+  content: "~";
+}
+.mail:before {
+  content: "[";
+}
+.message:before {
+  content: "\005C";
+}
+.delete:before {
+  content: "]";
+}
+.backspace:before {
+  content: "^";
+}
+.infinity:before {
+  content: "_";
+}
+.key:before {
+  content: "$";
+}
+.time:before {
+  content: "%";
+}
+.grid:before {
+  content: "\0022";
+}
+.list:before {
+  content: "\0023";
+}
+.heart:before {
+  content: ";";
+}
+.star:before {
+  content: "=";
+}
+.back:before {
+  content: "?";
+}
+.forward:before {
+  content: "@";
+}
+body {
+  background-image: url("../img/bg_e.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: source_sans_prolight;
+  font-size: 16px;
+  padding: 0;
+  max-height: 100%;
+  height: 700px;
+}
+.contenedor {
+  max-width: 300px;
+  margin: 0 auto 20px;
+  height: 100%;
+  position: relative;
+}
+#cabeza {
+  max-width: auto;
+  width: auto;
+  height: 180px;
+  background: rgba(0,115,66,0.7);
+  border-bottom: #f7931e 2px solid;
+  padding: 10px;
+}
+#logo {
+  text-indent: -1000;
+  background-image: url("../img/logo_e.png");
+  background-repeat: no-repeat;
+  background-position-x: 50%;
+  background-position-y: 100%;
+  height: 160px;
+}
+#titulo {
+  text-align: center;
+  padding: 10px auto;
+  font-family: source_sans_proregular;
+  color: #fff;
+}
+#login {
+  height: auto;
+}
+#login input,
+#login button {
+  position: relative;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  height: auto;
+}
+#login input {
+  width: 284px;
+  font-family: source_sans_prolight;
+  text-align: left;
+  text-indent: 30px;
+}
+#login p {
+  display: inline-block;
+  line-height: 0;
+  font-size: 1.5em;
+  color: #808080;
+  position: relative;
+  top: -45px;
+  left: 5px;
+  z-index: 200;
+}
+button {
+  color: #fff;
+  background: #f7931e;
+  font-family: source_sans_proregular;
+  border-top: #fbc280 solid 2px;
+  border-bottom: #a95e06 solid 2px;
+  border-left: none;
+  border-right: none;
+  text-align: center;
+}
+button:hover {
+  background: #f9ab4f;
+}
+button[type="submit"] {
+  width: 300px;
+  margin: 0;
+}
+footer {
+  background: rgba(255,255,255,0.1);
+  height: 180px;
+  max-width: 300px;
+  margin: 10px auto 0;
+  border-top: #fff solid thin;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+}
+footer a {
+  text-decoration: underline;
+  padding: 0 5px;
+  display: inline-block;
+  height: 30px;
+  font-size: 0.8em;
+  line-height: 30px;
+  color: #fff;
+  font-family: source_sans_prolight;
+}
+footer a:hover {
+  font-family: source_sans_proregular;
+}
+footer a:visited {
+  color: #fff;
+}
+footer .infoText {
+  text-align: center;
+  font-size: 0.8em;
+  margin: 5px;
+}
+.icono {
+  width: 30px;
+  height: 30px;
+  background: rgba(0,115,66,0.7);
+  font-size: 0.5em;
+  float: left;
+  line-height: 40px;
+  text-align: center;
+}

@@ -1,0 +1,586 @@
+@font-face {
+  font-family: 'source_sans_proregular';
+  src: url("../fonts/sourcesanspro-regular-webfont.eot");
+  src: url("../fonts/sourcesanspro-regular-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/sourcesanspro-regular-webfont.woff") format('woff'), url("../fonts/sourcesanspro-regular-webfont.ttf") format('truetype'), url("../fonts/sourcesanspro-regular-webfont.svg#source_sans_proregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'source_sans_prolight';
+  src: url("../fonts/sourcesanspro-light-webfont.eot");
+  src: url("../fonts/sourcesanspro-light-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/sourcesanspro-light-webfont.woff") format('woff'), url("../fonts/sourcesanspro-light-webfont.ttf") format('truetype'), url("../fonts/sourcesanspro-light-webfont.svg#source_sans_prolight") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'source_sans_probold';
+  src: url("../fonts/sourcesanspro-bold-webfont.eot");
+  src: url("../fonts/sourcesanspro-bold-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/sourcesanspro-bold-webfont.woff") format('woff'), url("../fonts/sourcesanspro-bold-webfont.ttf") format('truetype'), url("../fonts/sourcesanspro-bold-webfont.svg#source_sans_probold") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Typicons';
+  src: url("../fonts/typicons-regular-webfont.eot");
+  src: url("../fonts/typicons-regular-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/typicons-regular-webfont.woff") format('woff'), url("../fonts/typicons-regular-webfont.ttf") format('truetype'), url("../fonts/typicons-regular-webfont.svg#TypiconsRegular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.typicn {
+  font-family: "Typicons", sans-serif;
+  font-size: 3em;
+  -webkit-font-smoothing: antialiased;
+  -o-transform: scale(1);
+  padding: 0;
+  margin: 0;
+}
+.location:before {
+  content: "A";
+}
+.phone:before {
+  content: "B";
+}
+.home:before {
+  content: "C";
+}
+.camera:before {
+  content: "D";
+}
+.left:before {
+  content: "E";
+}
+.right:before {
+  content: "F";
+}
+.up:before {
+  content: "G";
+}
+.down:before {
+  content: "H";
+}
+.refresh:before {
+  content: "I";
+}
+.sync:before {
+  content: "J";
+}
+.loop:before {
+  content: "K";
+}
+.repeat:before {
+  content: "L";
+}
+.shuffle:before {
+  content: "M";
+}
+.rss:before {
+  content: "N";
+}
+.cog:before {
+  content: "O";
+}
+.spanner:before {
+  content: "P";
+}
+.barChart:before {
+  content: "Q";
+}
+.pieChart:before {
+  content: "R";
+}
+.lineChart:before {
+  content: "S";
+}
+.views:before {
+  content: "T";
+}
+.zoomIn:before {
+  content: "V";
+}
+.zoomOut:before {
+  content: "U";
+}
+.export:before {
+  content: "W";
+}
+.user:before {
+  content: "X";
+}
+.group:before {
+  content: "Y";
+}
+.microphone:before {
+  content: "Z";
+}
+.globe:before {
+  content: "a";
+}
+.thumbsUp:before {
+  content: "b";
+}
+.thumbsDown:before {
+  content: "c";
+}
+.tag:before {
+  content: "d";
+}
+.tab:before {
+  content: "e";
+}
+.warning:before {
+  content: "f";
+}
+.tick:before {
+  content: "g";
+}
+.beta:before {
+  content: "h";
+}
+.unlock:before {
+  content: "i";
+}
+.lock:before {
+  content: "j";
+}
+.eject:before {
+  content: "k";
+}
+.move:before {
+  content: "l";
+}
+.expand:before {
+  content: "m";
+}
+.cancel:before {
+  content: "n";
+}
+.power:before {
+  content: "o";
+}
+.compass:before {
+  content: "p";
+}
+.radar:before {
+  content: "q";
+}
+.directions:before {
+  content: "r";
+}
+.pin:before {
+  content: "s";
+}
+.mute:before {
+  content: "t";
+}
+.volume:before {
+  content: "u";
+}
+.world:before {
+  content: "v";
+}
+.write:before {
+  content: "w";
+}
+.minus:before {
+  content: "x";
+}
+.equals:before {
+  content: "y";
+}
+.feed:before {
+  content: "z";
+}
+.batteryNone:before {
+  content: "0";
+}
+.batteryLow:before {
+  content: "1";
+}
+.batteryMid:before {
+  content: "2";
+}
+.batteryHigh:before {
+  content: "3";
+}
+.batteryPower:before {
+  content: "4";
+}
+.plus:before {
+  content: "5";
+}
+.times:before {
+  content: "6";
+}
+.next:before {
+  content: "7";
+}
+.previous:before {
+  content: "8";
+}
+.edit:before {
+  content: "9";
+}
+.cut:before {
+  content: "'";
+}
+.anchor:before {
+  content: "(";
+}
+.bookmark:before {
+  content: ")";
+}
+.music:before {
+  content: "*";
+}
+.puzzle:before {
+  content: "+";
+}
+.archive:before {
+  content: ",";
+}
+.mobile:before {
+  content: "-";
+}
+.contrast:before {
+  content: ".";
+}
+.brightness:before {
+  content: "/";
+}
+.flag:before {
+  content: "{";
+}
+.info:before {
+  content: "|";
+}
+.unknown:before {
+  content: "}";
+}
+.chat:before {
+  content: "~";
+}
+.mail:before {
+  content: "[";
+}
+.message:before {
+  content: "\005C";
+}
+.delete:before {
+  content: "]";
+}
+.backspace:before {
+  content: "^";
+}
+.infinity:before {
+  content: "_";
+}
+.key:before {
+  content: "$";
+}
+.time:before {
+  content: "%";
+}
+.grid:before {
+  content: "\0022";
+}
+.list:before {
+  content: "\0023";
+}
+.heart:before {
+  content: ";";
+}
+.star:before {
+  content: "=";
+}
+.back:before {
+  content: "?";
+}
+.forward:before {
+  content: "@";
+}
+body {
+  background-attachment: fixed;
+  background-image: url("../img/bg_e.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  font-family: source_sans_prolight;
+  font-size: 16px;
+  height: auto;
+  min-height: 100%;
+  padding: 0;
+}
+p {
+  margin: 0;
+}
+::selection {
+  background: #f7931e;
+  color: #fff;
+}
+#contenedor {
+  height: 100%;
+  margin: 0 auto 20px;
+  position: relative;
+  width: 960px;
+}
+header {
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  height: 100px;
+  top: 0;
+  width: 960px;
+  position: fixed;
+  z-index: 250;
+}
+header #logo {
+  background: #007342;
+  float: left;
+  height: 100px;
+  width: 220px;
+  text-indent: -1000;
+  background-image: url("../img/logo_e.png");
+  background-repeat: no-repeat;
+  background-position-x: 20px;
+  background-position-y: 50%;
+  background-size: 80%;
+}
+header nav {
+  display: inline-block;
+  height: 100px;
+  width: auto;
+}
+header #menu {
+  float: left;
+  height: 100px;
+  list-style: none;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+header .item {
+  display: inline-block;
+  height: 80px;
+  text-align: center;
+  width: 110px;
+}
+header .item span {
+  margin: 20px 0 5px;
+  display: inline-block;
+}
+header .item p {
+  margin: 20px 0 0;
+}
+header .item .submenu1 {
+  background: #fff;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.35);
+  color: #f7931e;
+  display: none;
+  height: 100px;
+  left: 0;
+  list-style: none;
+  margin: 0;
+  position: absolute;
+  text-align: center;
+  top: 100px;
+  width: 100%;
+  z-index: 200;
+}
+header .item .submenu1 .submenu_item {
+  border-top: #f7931e 2px solid;
+  display: inline-block;
+  font-family: source_sans_proregular;
+  margin: 20px 5px;
+  padding: 20px 10px;
+  text-align: left;
+}
+header .item .submenu1 .submenu_item .typicn {
+  font-size: 2em;
+  float: left;
+}
+header .item .submenu1 .submenu_item p,
+header .item .submenu1 .submenu_item a {
+  color: #f7931e;
+  display: inline-block;
+  margin: 0;
+}
+header .item .submenu1 .submenu_item a {
+  text-decoration: none;
+}
+header .item .submenu1 .submenu_item:hover {
+  background: rgba(247,147,30,0.1);
+}
+header .item .submenu1 .submenu_item:hover a {
+  text-decoration: underline;
+}
+header .item:hover .typicn:first-child {
+  text-shadow: 0 0 10px #f9b513;
+}
+header .item:hover span:after {
+  border-color: transparent transparent #fff transparent;
+  border-style: solid;
+  border-width: 10px;
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 80px;
+  width: 0;
+}
+header .item:hover .i_uno:after {
+  left: 265px;
+}
+header .item:hover .i_dos:after {
+  left: 380px;
+}
+header .item:hover .i_tres:after {
+  left: 490px;
+}
+header .item:hover .i_cuatro:after {
+  left: 605px;
+}
+header .item:hover .submenu1,
+header .item:hover {
+  display: inline-block;
+}
+header li#espacioUsuario {
+  border-left: #f7931e 2px solid;
+  height: 80px;
+  padding: 0 0 0;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  width: 180px;
+}
+header li#espacioUsuario p {
+  margin: auto;
+}
+header #nombreUsuario {
+  float: left;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 5px 10px;
+}
+header #salir {
+  float: right;
+  font-size: 0.4em;
+  height: 30px;
+  line-height: 35px;
+  text-align: center;
+  width: 30px;
+}
+header #salir :hover {
+  background: #f7931e;
+}
+header #invitaciones {
+  border-top: #fff thin solid;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 10px;
+  width: 160px;
+}
+header #invitaciones .numero {
+  float: left;
+  font-size: 2.5em;
+  margin: 10px 5px 0;
+}
+header #invitaciones p {
+  float: left;
+  line-height: 1.1em;
+  margin: 5px;
+}
+#iconos {
+  padding: 5px;
+}
+#iconos p {
+  color: #fff;
+  display: inline-block;
+  margin: 5px;
+}
+#contenido {
+  margin: 104px 0 0 0;
+  overflow: hidden;
+  position: relative;
+}
+#contenido img {
+  max-width: 100%;
+}
+#contenido #grupoInfo {
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  overflow: hidden;
+}
+#contenido .infoIndicador {
+  background: rgba(0,0,0,0.7);
+  border-top: #f9b513 solid 2px;
+  float: left;
+  height: 200px;
+  margin: 0;
+  padding: 10px;
+  width: 280px;
+  font-family: source_sans_prolight;
+}
+#contenido .infoIndicador .numero {
+  color: #f9b513;
+  float: left;
+  font-size: 5em;
+  line-height: 1em;
+}
+#contenido .infoIndicador .typicn {
+  color: #f9b513;
+  float: right;
+  line-height: 1em;
+  margin: 10px 0 0;
+}
+#contenido .infoIndicador p {
+  color: #fff;
+  float: left;
+  font-size: 1.8em;
+  line-height: 1em;
+}
+#contenido .infoIndicador:nth-child(2) {
+  margin: 0 30px;
+}
+#elementos {
+  margin: 0 auto;
+}
+form {
+  background: rgba(255,255,255,0.75);
+}
+table {
+  background: #fff;
+}
+footer {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  border-top: #fff solid thin;
+  color: #fff;
+}
+footer a {
+  text-decoration: underline;
+  padding: 0 5px;
+  display: inline-block;
+  height: 30px;
+  font-size: 0.8em;
+  line-height: 30px;
+  color: #fff;
+  font-family: source_sans_prolight;
+}
+footer a:hover {
+  font-family: source_sans_proregular;
+}
+footer a:visited {
+  color: #fff;
+}
+footer .infoText {
+  text-align: center;
+  font-size: 0.8em;
+  margin: 5px;
+}
+.icono {
+  width: 30px;
+  height: 30px;
+  background: rgba(0,115,66,0.7);
+  font-size: 0.5em;
+  float: left;
+  line-height: 40px;
+  text-align: center;
+}

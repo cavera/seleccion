@@ -1,0 +1,33 @@
+.elementos
+	form.newform
+		h2 Reportes
+		fieldset
+			legend Por fecha
+			.row.columna_l
+				label.span3 de
+				input.span2(type='date',name='fecha_de',value='2013-06-24', placeholder='AAAA-MM-DD')
+			.row.columna_r
+				label.span1 a
+				input.span2(type='date',name='fecha_a',value='2013-06-24', placeholder='AAAA-MM-DD')
+		fieldset
+			legend Por cargo
+			.row.columna_m
+				select.span5(name='cargo')
+					option(value='cargo1') cargo1
+					option(value='cargo2') cargo2
+					option(value='cargo3') cargo3
+		fieldset
+			legend Por DNI
+			.row.columna_m
+				select.span5(name='ciudad')
+					option(value='123456') 123456
+					option(value='123456') 123456
+					option(value='123456') 123456
+					option(value='123456') 123456
+
+		.clearfix
+		.row.columna_m
+			button(type='submit')
+				p.b_icono.buscar
+				p Visualizar
+		.clearfix

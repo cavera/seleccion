@@ -1,0 +1,49 @@
+.elementos
+	form.newform
+		h2 Prueba de conocimientos
+		.row
+			label.span3 Examen
+			input.span4(type='text',placeholder='Examen', name='examen')
+		.row
+			label.span3 Pregunta
+			textarea.span4(rows='4',cols='40', name='pregunta')
+		.row
+			label.span3 Alternativa 1
+			input.span4(type='text',placeholder='Alternativa', name='alternativa1')
+			input(type='checkbox') 
+			span Correcta
+		.row
+			label.span3 Alternativa 2
+			input.span4(type='text',placeholder='Alternativa', name='alternativa2')
+			input(type='checkbox') 
+			span Correcta
+		.row
+			label.span3 Alternativa 3
+			input.span4(type='text',placeholder='Alternativa', name='alternativa3')
+			input(type='checkbox') 
+			span Correcta
+
+		.row.columna_m
+			button(class='nuevo')
+				p.b_icono.nuevo
+				p Añadir
+			button(class='pregunta')
+				p.b_icono.pregunta
+				p Pregunta
+			button(class='pregunta')
+				p.b_icono.buscar
+				p Visualizar
+			button(type='reset')
+				p.b_icono.eliminar
+				p Cancelar
+		.clearfix
+
+
+
+
+
+
+
+
+
+

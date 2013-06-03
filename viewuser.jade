@@ -1,15 +1,12 @@
 .elementos.form_tabla
 	form
-		h2 Nuevo o cargar datos del postulante
+		h2 Listar datos generales de postulantes
 		.row
-			label.span3 Tipo registro
-			select.span3(data-label='tipo_registro') 
-				option(value='carga_masiva') Carga Masiva
-				option(value='carga_manual') Carga Manual
-				input.span4(type='file',placeholder='Ruta de archivo')
-				button(type='submit') 
-					p.b_icono.cargar 
-					p Cargar
+			label.span3 Filtrar usuario
+			input.span4(type='search',placeholder='Busqueda')
+			button(type='submit')
+				p.b_icono.buscar
+				p Buscar
 		.row.columna_m
 			button(class='nuevo')
 				p.b_icono.nuevo
@@ -38,8 +35,7 @@
 							input(type='checkbox') 
 						th Cargo
 							input(type='checkbox') 
-						th Editar
-							input(type='checkbox') 
+						th Seleccionar
 				tbody
 					tr
 						td Nombres y apellidos
@@ -59,9 +55,48 @@
 						td Fecha nac.
 						td Dirección
 						td Cargo
-						td.celda_check
+						td 
 							input(type='checkbox')
-
+					tr
+						td Nombres y apellidos
+						td DNI
+						td Teléfono
+						td Celular
+						td Fecha nac.
+						td Dirección
+						td Cargo
+						td 
+							input(type='checkbox')
+					tr
+						td Nombres y apellidos
+						td DNI
+						td Teléfono
+						td Celular
+						td Fecha nac.
+						td Dirección
+						td Cargo
+						td 
+							input(type='checkbox')
+					tr
+						td Nombres y apellidos
+						td DNI
+						td Teléfono
+						td Celular
+						td Fecha nac.
+						td Dirección
+						td Cargo
+						td 
+							input(type='checkbox')
+					tr
+						td Nombres y apellidos
+						td DNI
+						td Teléfono
+						td Celular
+						td Fecha nac.
+						td Dirección
+						td Cargo
+						td 
+							input(type='checkbox')
 	.row
 		.paginator
 			a(href='#') prev
@@ -69,3 +104,12 @@
 			a(href='#') 2
 			a(href='#') 3
 			a(href='#') next
+
+
+
+
+
+
+
+
+

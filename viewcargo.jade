@@ -1,0 +1,50 @@
+.elementos.form_tabla
+	form
+		h2 Listar cargo
+		.row
+			label.span2 Filtrar cargo
+			input.span3(type='text',placeholder='Cargo', name='cargo')
+			button(class='nuevo')
+				p.b_icono.nuevo
+				p Nuevo
+
+			button(class='editar')
+				p.b_icono.editar
+				p Editar
+			button(class='eliminar')
+				p.b_icono.eliminar
+				p Cancelar
+		.row.columna_m
+			table.tabla_small
+				thead
+					tr
+						th Cargo
+						th Editar
+				tbody
+					tr
+						td Analista Programador
+						td
+							input(type='checkbox')
+					tr
+						td Analista Programador
+						td
+							input(type='checkbox')
+					tr
+						td Analista Programador
+						td
+							input(type='checkbox')
+					tr
+						td Analista Programador
+						td
+							input(type='checkbox')
+	.row
+		.paginator
+			a(href='#') prev
+			a(href='#') 1
+			a(href='#') 2
+			a(href='#') 3
+			a(href='#') next
+
+		
+
+		

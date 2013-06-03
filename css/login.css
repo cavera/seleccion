@@ -319,7 +319,7 @@ body {
   max-width: auto;
   width: auto;
   height: 180px;
-  background: rgba(0,115,66,0.7);
+  background: rgba(0,115,66,0.8);
   border-bottom: #f7931e 2px solid;
   padding: 10px;
 }
@@ -327,8 +327,7 @@ body {
   text-indent: -1000;
   background-image: url("../img/logo_e.png");
   background-repeat: no-repeat;
-  background-position-x: 50%;
-  background-position-y: 100%;
+  background-position: bottom;
   height: 160px;
 }
 #titulo {
@@ -414,7 +413,7 @@ footer .infoText {
 .icono {
   width: 30px;
   height: 30px;
-  background: rgba(0,115,66,0.7);
+  background: rgba(0,115,66,0.8);
   font-size: 0.5em;
   float: left;
   line-height: 40px;

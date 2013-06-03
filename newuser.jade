@@ -1,136 +1,139 @@
-#elementos.span12
-	form
+.elementos
+	form.newform
 		h2 Datos generales del postulante
-		.row
-			label.span2 Nombres
-			input.span4(type='text',placeholder='Nombres', name='name',required)
-		.row
-			label.span2 Apellido paterno
-			input.span4(type='text',placeholder='Apellido', name='apellido1',required)
-		.row
-			label.span2 Apellido materno
-			input.span4(type='text',placeholder='Apellido', name='apellido2',required)
-		.row
-			label.span2 DNI
-			input.span4(type='text',placeholder='DNI', name='dni',required)
-		.row
-			label.span2 País
-			select.span2(name='pais')
-				option(value='peru') Perú
-				option(value='ecuador') Ecuador
-				option(value='colombia') Colombia
-				option(value='brasil') Brasil
-				option(value='bolivia') Bolivia
-			label.span2 Ciudad
-			select.span2(name='ciudad')
-				option(value='ANCASH') ANCASH
-				option(value='LAMBAYEQUE') LAMBAYEQUE
-				option(value='LIMA') LIMA
-				option(value='PIURA') PIURA
-				option(value='TUMBES') TUMBES
-				option(value='SAN') MARTIN SAN MARTIN
-				option(value='PUNO') PUNO
-				option(value='TACNA') TACNA
-		.row
-			label.span2 Distrito
-			select.span2(name='distrito')
-				option(value='Ancón') Ancón
-				option(value='Ate') Ate
-				option(value='Barranco') Barranco
-				option(value='Breña') Breña
-				option(value='Carabayllo') Carabayllo
-				option(value='Cercado de Lima') Cercado de Lima
-				option(value='Chaclacayo') Chaclacayo
-				option(value='Chorrillos') Chorrillos
-				option(value='Cieneguilla') Cieneguilla
-				option(value='Comas') Comas
-				option(value='El Agustino') El Agustino
-				option(value='Independencia') Independencia
-				option(value='Jesús María') Jesús María
-				option(value='La Molina') La Molina
-				option(value='La Victoria') La Victoria
-				option(value='Lince') Lince
-				option(value='Los Olivos') Los Olivos
-				option(value='Lurigancho-Chosica') Lurigancho-Chosica
-				option(value='Lurín') Lurín
-				option(value='Magdalena del Mar') Magdalena del Mar
-				option(value='Pueblo Libre') Pueblo Libre
-				option(value='Miraflores') Miraflores
-				option(value='Pachacámac') Pachacámac
-				option(value='Pucusana') Pucusana
-				option(value='Puente Piedra') Puente Piedra
-				option(value='Punta Hermosa') Punta Hermosa
-				option(value='Punta Negra') Punta Negra
-				option(value='Rímac') Rímac
-				option(value='San Bartolo') San Bartolo
-				option(value='San Borja') San Borja
-				option(value='San Isidro') San Isidro
-				option(value='San Juan de Lurigancho') San Juan de Lurigancho
-				option(value='San Juan de Miraflores') San Juan de Miraflores
-				option(value='San Luis') San Luis
-				option(value='San Martín de Porres') San Martín de Porres
-				option(value='San Miguel') San Miguel
-				option(value='Santa Anita') Santa Anita
-				option(value='Santa María del Mar') Santa María del Mar
-				option(value='Santa Rosa') Santa Rosa
-				option(value='Santiago de Surco') Santiago de Surco
-				option(value='Surquillo') Surquillo
-				option(value='Villa El Salvador') Villa El Salvador
-				option(value='Villa María del Triunfo') Villa María del Triunfo
-		.row
-			label.span2 Teléfono fijo
-			input.span1(type='tel',name='prefijo',placeholder='+')
-			input.span2(type='tel',name='num_fijo',placeholder='')
-		.row
-			label.span2 Celular
-			input.span2(type='tel',name='celular',placeholder='')
+		.columna_l
+			.row
+				label.span2 Nombres
+				input.span4(type='text',placeholder='Nombres', name='name',required)
+			.row
+				label.span2 Apellido paterno
+				input.span4(type='text',placeholder='Apellido', name='apellido1',required)
+			.row
+				label.span2 Apellido materno
+				input.span4(type='text',placeholder='Apellido', name='apellido2',required)
+			.row
+				label.span2 DNI
+				input.span4(type='text',placeholder='DNI', name='dni',required, pattern='[0-9]*')
+		.columna_r
+			.row
+				label.span2 País
+				select.span3(name='pais')
+					option(value='peru') Perú
+					option(value='ecuador') Ecuador
+					option(value='colombia') Colombia
+					option(value='brasil') Brasil
+					option(value='bolivia') Bolivia
+			.row
+				label.span2 Ciudad
+				select.span3(name='ciudad')
+					option(value='ANCASH') ANCASH
+					option(value='LAMBAYEQUE') LAMBAYEQUE
+					option(value='LIMA') LIMA
+					option(value='PIURA') PIURA
+					option(value='TUMBES') TUMBES
+					option(value='SAN') MARTIN SAN MARTIN
+					option(value='PUNO') PUNO
+					option(value='TACNA') TACNA
+			.row
+				label.span2 Distrito
+				select.span3(name='distrito')
+					option(value='Ancón') Ancón
+					option(value='Ate') Ate
+					option(value='Barranco') Barranco
+					option(value='Breña') Breña
+					option(value='Carabayllo') Carabayllo
+					option(value='Cercado de Lima') Cercado de Lima
+					option(value='Chaclacayo') Chaclacayo
+					option(value='Chorrillos') Chorrillos
+					option(value='Cieneguilla') Cieneguilla
+					option(value='Comas') Comas
+					option(value='El Agustino') El Agustino
+					option(value='Independencia') Independencia
+					option(value='Jesús María') Jesús María
+					option(value='La Molina') La Molina
+					option(value='La Victoria') La Victoria
+					option(value='Lince') Lince
+					option(value='Los Olivos') Los Olivos
+					option(value='Lurigancho-Chosica') Lurigancho-Chosica
+					option(value='Lurín') Lurín
+					option(value='Magdalena del Mar') Magdalena del Mar
+					option(value='Pueblo Libre') Pueblo Libre
+					option(value='Miraflores') Miraflores
+					option(value='Pachacámac') Pachacámac
+					option(value='Pucusana') Pucusana
+					option(value='Puente Piedra') Puente Piedra
+					option(value='Punta Hermosa') Punta Hermosa
+					option(value='Punta Negra') Punta Negra
+					option(value='Rímac') Rímac
+					option(value='San Bartolo') San Bartolo
+					option(value='San Borja') San Borja
+					option(value='San Isidro') San Isidro
+					option(value='San Juan de Lurigancho') San Juan de Lurigancho
+					option(value='San Juan de Miraflores') San Juan de Miraflores
+					option(value='San Luis') San Luis
+					option(value='San Martín de Porres') San Martín de Porres
+					option(value='San Miguel') San Miguel
+					option(value='Santa Anita') Santa Anita
+					option(value='Santa María del Mar') Santa María del Mar
+					option(value='Santa Rosa') Santa Rosa
+					option(value='Santiago de Surco') Santiago de Surco
+					option(value='Surquillo') Surquillo
+					option(value='Villa El Salvador') Villa El Salvador
+					option(value='Villa María del Triunfo') Villa María del Triunfo
+			.row
+				label.span2 Dirección
+				input.span2(type='text',name='direccion',placeholder='Dirección')
+			.row
+				label.span2 Teléfono fijo
+				input.span1(type='tel',name='prefijo',placeholder='+', pattern='[0-9]*')
+				input.span2(type='tel',name='num_fijo',placeholder='', pattern='[0-9]*')
+			.row
+				label.span2 Celular
+				input.span2(type='tel',name='celular',placeholder='', pattern='[0-9]*')
+		.columna_l
+			.row
+				label.span2 Sexo
+				select.span3(name='sexo')
+					option(value='masculino') Masculino
+					option(value='femenino') Femenino
+			.row
+				label.span2 Fecha de nacimiento
+				input.span2(type='date',name='fecha',value='2013-06-24', placeholder='AAAA-MM-DD')
+			.row
+				label.span2 Edad
+				input.span1(type='number',name='edad')
 
-		.row
-			label.span2 Sexo
-			select.span2(name='sexo')
-				option(value='masculino') Masculino
-				option(value='femenino') Femenino
-		.row
-			label.span2 Fecha de nacimiento
-			input.span2(type='date',name='fecha',value='2013-06-24', placeholder='AAAA-MM-DD')
-		.row
-			label.span2 Edad
-			input.span1(type='number',name='edad')
-
-		.row
-			label.span2 Estado civil
-			select.span2(name='estado_civil')
-				option(value='soltero') Soltero(a)
-				option(value='casado') Casado(a)
-				option(value='viudo') Viudo(a)
-				option(value='separado') Separado(a)
-		.row
-			label.span2 Cargo
-			select.span2(name='cargo')
-				option(value='recursos_humanos') Recursos humanos
-				option(value='logistica') Logística
-				option(value='informatca') Informátca
-				option(value='creditos') Recursos humanos
-				option(value='manual') Asignación manual
-		.row
-			label.span2 Nivel usuario
-			select.span2(name='nivel')
-				option(value='postulante') Postulante
-				option(value='superadministrador') Super administrador
-				option(value='administrador') Administrador
-		.row
-			label.span2 Correo electrónico
-			input.span3(type='email',placeholder='nombre@dominio.com')
-		.row
-			button(type='submit') Guardar
-			button(type='reset') Cancelar
-
-
-
-
-
-
-
-
-
-
+			.row
+				label.span2 Estado civil
+				select.span3(name='estado_civil')
+					option(value='soltero') Soltero(a)
+					option(value='casado') Casado(a)
+					option(value='viudo') Viudo(a)
+					option(value='separado') Separado(a)
+		.columna_r
+			.row
+				label.span2 Cargo
+				select.span3(name='cargo')
+					option(value='recursos_humanos') Recursos humanos
+					option(value='logistica') Logística
+					option(value='informatca') Informátca
+					option(value='creditos') Recursos humanos
+					option(value='manual') Asignación manual
+			.row
+				label.span2 Nivel usuario
+				select.span3(name='nivel')
+					option(value='postulante') Postulante
+					option(value='superadministrador') Super administrador
+					option(value='administrador') Administrador
+			.row
+				label.span2 Correo electrónico
+				input.span3(type='email',placeholder='nombre@dominio.com')
+		.clearfix
+		.row.columna_m
+			button(type='submit')
+				p.b_icono.submit
+				p Guardar
+			button(type='reset')
+				p.b_icono.eliminar
+				p Cancelar
+		.clearfix

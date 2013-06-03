@@ -1,0 +1,63 @@
+.elementos
+	form.newform
+		h2 Prueba de conocimientos
+
+		.row
+			label.span3 Examen
+			input.span6(type='text',placeholder='Examen', name='examen')
+		fieldset
+			legend Pregunta
+			.row
+				label.span3 Pregunta
+				textarea.span6(rows='2',cols='40', name='pregunta')
+			.row
+				label.span3 Alternativa 1
+				input.span6(type='text',placeholder='Alternativa', name='alternativa1')
+				input(type='radio', name='pregunta1') 
+				span Correcta
+			.row
+				label.span3 Alternativa 2
+				input.span6(type='text',placeholder='Alternativa', name='alternativa2')
+				input(type='radio', name='pregunta1') 
+				span Correcta
+
+
+		fieldset
+			legend Pregunta
+			.row
+				label.span3 Pregunta
+				textarea.span6(rows='2',cols='40', name='pregunta')
+			.row
+				label.span3 Alternativa 1
+				input.span6(type='text',placeholder='Alternativa', name='alternativa1')
+				input(type='radio', name='pregunta2') 
+				span Correcta
+			.row
+				label.span3 Alternativa 2
+				input.span6(type='text',placeholder='Alternativa', name='alternativa2')
+				input(type='radio', name='pregunta2') 
+				span Correcta
+			.row
+				label.span3 Alternativa 3
+				input.span6(type='text',placeholder='Alternativa', name='alternativa3')
+				input(type='radio', name='pregunta2') 
+				span Correcta
+
+		.row.columna_m
+			button(type='submit') 
+				p.b_icono.cargar 
+				p Guardar
+			button(type='reset')
+				p.b_icono.eliminar
+				p Cancelar
+		.clearfix
+
+
+
+
+
+
+
+
+
+

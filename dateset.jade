@@ -1,0 +1,66 @@
+.elementos.form_tabla
+	form
+		h2 Programar evaluación
+		.row
+			label.span2 Buscar postulante
+			input.span3(type='search',placeholder='Postulante')
+			button(type='submit')
+				p.b_icono.buscar
+				p Buscar
+			label.span2 Fecha de evaluación
+			input.span2(type='date',name='fecha',value='', placeholder='AAAA-MM-DD')
+		.row.columna_m	
+			button(class='invitar')
+				p.b_icono.submit
+				p Guardar
+				
+			button(class='editar')
+				p.b_icono.editar
+				p Editar
+			button(class='eliminar')
+				p.b_icono.eliminar
+				p Cancelar
+		.row
+			table
+				thead
+					tr
+						th Nombres y apellidos 
+							input(type='checkbox') 
+						th Cargo
+							input(type='checkbox') 
+						th Fecha evaluación
+							input(type='checkbox') 
+						th Editar
+				tbody
+					tr
+						td Nombres y apellidos
+						td Cargo
+						td 2013-06-06
+						td 
+							input(type='checkbox')
+					tr
+						td Nombres y apellidos
+						td Cargo
+						td 2013-06-06
+						td 
+							input(type='checkbox')
+					tr
+						td Nombres y apellidos
+						td Cargo
+						td 2013-06-06
+						td 
+							input(type='checkbox')
+					tr
+						td Nombres y apellidos
+						td Cargo
+						td 2013-06-06
+						td 
+							input(type='checkbox')
+					
+	.row
+		.paginator
+			a(href='#') prev
+			a(href='#') 1
+			a(href='#') 2
+			a(href='#') 3
+			a(href='#') next

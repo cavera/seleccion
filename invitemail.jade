@@ -1,0 +1,59 @@
+.elementos.form_tabla
+	form
+		h2 Invitación a postulantes
+		.row
+			label.span3 Buscar:
+			input.span4(type='search',placeholder='Buscar')
+			button(type='submit')
+				p.b_icono.buscar
+				p Buscar
+		.row
+			table
+				thead
+					tr
+						th Código
+						th Nombres y apellidos 
+						th DNI
+						th Cargo
+						th Todos
+							input(type='checkbox') 
+				tbody
+					tr
+						td U000000001
+						td Martin Isaac García Pulache
+						td 42951149
+						td Analista Programador
+						td 
+							input(type='checkbox')
+					tr
+						td U000000001
+						td Martin Isaac García Pulache
+						td 42951149
+						td Analista Programador
+						td 
+							input(type='checkbox')
+					tr
+						td U000000001
+						td Martin Isaac García Pulache
+						td 42951149
+						td Analista Programador
+						td 
+							input(type='checkbox')
+					tr
+						td U000000001
+						td Martin Isaac García Pulache
+						td 42951149
+						td Analista Programador
+						td 
+							input(type='checkbox')
+		.row.columna_m			
+			button(class='invitar')
+				p.b_icono.submit
+				p Invitar						
+	.row
+		.paginator
+			a(href='#') prev
+			a(href='#') 1
+			a(href='#') 2
+			a(href='#') 3
+			a(href='#') next

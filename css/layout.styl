@@ -1,10 +1,14 @@
 @import('sourcesans')
 @import('typicons')
 
+
 cliente = 'edyficar'
 @import(cliente)
+@import('form')
+// generales
 
 body
+	background-color: color_a
 	background-attachment fixed
 	background-image url("../img/" + imagenFondo + ".jpg")
 	background-repeat no-repeat
@@ -15,7 +19,7 @@ body
 	min-height 100%
 	padding 0
 
-div, header, nav, ul, li, footer, form
+div, header, nav, ul, li, footer, form, p
 	// outline rgba(color_a, alpha) dotted thin
 
 p
@@ -30,146 +34,9 @@ p
 	position relative
 	width 960px
 
-header
-	// overflow hidden
-	background rgba(black, alpha)
-	// box-shadow: 0 5px 5px rgba(black, alpha/2)
-	color white
-	height 100px
-	top 0
-	width 960px
-	position: fixed
-	z-index: 250
-	#logo
-		background color_a
-		float left
-		height 100px
-		width 220px
-		text-indent: -1000
-		background-image: url("../img/" + logo + ".png")
-		background-repeat: no-repeat
-		background-position-x: 20px
-		background-position-y: 50%
-		background-size: 80%
-	nav
-		display inline-block
-		height 100px
-		width auto
-	#menu
-		float: left
-		height 100px
-		list-style none
-		margin 0 auto
-		padding-top: 10px
-	.item
-		display inline-block
-		height 80px
-		text-align: center
-		width 110px
-		span
-			margin 20px 0 5px
-			display: inline-block
-		p
-			margin 20px 0 0
-		.submenu1
-			background: white
-			box-shadow: 0 5px 5px rgba(black, alpha/2)
-			color color_b
-			display none
-			height 100px
-			left 0
-			list-style: none
-			margin 0
-			position: absolute
-			text-align: center
-			top 100px
-			width 100%
-			z-index: 200
-			.submenu_item
-				border-top: color_b 2px solid
-				display inline-block
-				font-family: source_sans_proregular
-				margin 20px 5px
-				padding 20px 10px
-				text-align: left
-				.typicn
-					font-size: 2em
-					float left
-				p, a
-					color color_b
-					display inline-block
-					margin: 0
-				a
-					text-decoration: none
-			.submenu_item:hover
-				background rgba(color_b, .1)
-				a
-					text-decoration: underline
+@import('cabeza')
 
-	.item:hover
-		.typicn:first-child
-			text-shadow 0 0 10px color_c
-		span:after
-				border-color: transparent transparent white transparent;
-				border-style: solid;
-				border-width: 10px;
-				content: ""
-				height: 0;
-				position: absolute;
-				top: 80px
-				width: 0;
-		.i_uno:after
-				left: 265px
-		.i_dos:after
-				left: 380px
-		.i_tres:after
-				left: 490px
-		.i_cuatro:after
-				left: 605px
-		.submenu1
-		// aparece el menú
-			display inline-block
-
-	li#espacioUsuario
-		border-left color_b 2px solid
-		height 80px
-		padding 0 0 0
-		position: absolute
-		right 0
-		top 10px
-		width 180px
-		p
-			margin auto
-	#nombreUsuario
-		float: left
-		height 30px
-		line-height: @height
-		margin 0 5px 10px
-	#salir
-		// background: color_b
-		float: right
-		font-size: .4em
-		height 30px
-		line-height: 35px
-		text-align: center
-		width 30px
-		:hover
-			background: color_b
-	#invitaciones
-		border-top: white thin solid
-		display: inline-block
-		height 40px
-		line-height: @height
-		margin 0 10px
-		width 160px
-		.numero
-			float: left
-			font-size: 2.5em
-			margin 10px 5px 0
-		p
-			float: left
-			line-height: 1.1em
-			margin 5px 
+// cuerpo
 			
 #iconos
 	padding 5px
@@ -180,57 +47,56 @@ header
 
 #contenido
 	margin 104px 0 0 0
-	overflow hidden
-	position relative
+	h2
+		font-size: 1.3em
+		background: rgba(black, alpha)
+		color white
+		margin 0 auto 10px
+		text-align: center
+
 	img
 		max-width 100%
-	#grupoInfo
-		position absolute
-		top 200px
-		width 100%
-		overflow: hidden
-	.infoIndicador
-		background: rgba(black, alpha)
-		border-top: color_c solid 2px
-		float left
-		height 200px
-		margin 0
-		padding 10px
-		width 280px
-		font-family: source_sans_prolight
-		.numero
-			color color_c
-			float: left
-			font-size: 5em
-			line-height: 1em
-		.typicn
-			color color_c
-			float: right
-			line-height: 1em
-			margin 10px 0 0
-		p
-			color white	
-			float: left
-			font-size: 1.8em
-			line-height: 1em
-	.infoIndicador:nth-child(2)
-		margin 0 30px
+#grupoInfo
+	position absolute
+	top 200px
+	width 100%
+	overflow: hidden
+.infoIndicador
+	background: rgba(black, alpha)
+	border-top: color_c solid 2px
+	float left
+	height 200px
+	margin 0
+	padding 10px
+	width 280px
+	font-family: source_sans_prolight
+	.numero
+		color color_c
+		float: left
+		font-size: 5em
+		line-height: 1em
+	.typicn
+		color color_c
+		float: right
+		line-height: 1em
+		margin 10px 0 0
+	p
+		color white	
+		float: left
+		font-size: 1.8em
+		line-height: 1em
+.infoIndicador:nth-child(2)
+	margin 0 30px
 
-#elementos
-	margin 0 auto
 
-form 
-	background rgba(white, .75)
 
-table
-	background white
+// pie
 
 footer
 	background: rgba(black,alpha)
-	width 100%
 	border-top:white solid thin
 	color:white
-
+	height: 30px
 	a
 		text-decoration: underline
 		padding:0 5px
@@ -244,10 +110,10 @@ footer
 			font-family: source_sans_proregular
 	a:visited
 			color:white
-	.infoText
-		text-align: center
-		font-size:.8em
-		margin: 5px
+.infoText
+	text-align: center
+	font-size:.8em
+	margin: 5px
 
 .icono 
 	width: 30px

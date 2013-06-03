@@ -1,6 +1,6 @@
 
-<div id="elementos" class="span12">
-  <form>
+<div class="elementos">
+  <form class="newform">
     <h2>Datos generales del postulante</h2>
     <div class="row">
       <label class="span2">Nombres</label>
@@ -19,16 +19,18 @@
       <input type="text" placeholder="DNI" name="dni" required="required" class="span4"/>
     </div>
     <div class="row">
-      <label class="span2">País</label>
-      <select name="pais" class="span2">
+      <label class="span3">País</label>
+      <select name="pais" class="span3">
         <option value="peru">Perú</option>
         <option value="ecuador">Ecuador</option>
         <option value="colombia">Colombia</option>
         <option value="brasil">Brasil</option>
         <option value="bolivia">Bolivia</option>
       </select>
-      <label class="span2">Ciudad</label>
-      <select name="ciudad" class="span2">
+    </div>
+    <div class="row">
+      <label class="span3">Ciudad</label>
+      <select name="ciudad" class="span3">
         <option value="ANCASH">ANCASH</option>
         <option value="LAMBAYEQUE">LAMBAYEQUE</option>
         <option value="LIMA">LIMA</option>
@@ -40,8 +42,8 @@
       </select>
     </div>
     <div class="row">
-      <label class="span2">Distrito</label>
-      <select name="distrito" class="span2">
+      <label class="span3">Distrito</label>
+      <select name="distrito" class="span3">
         <option value="Ancón">Ancón</option>
         <option value="Ate">Ate</option>
         <option value="Barranco">Barranco</option>
@@ -88,32 +90,36 @@
       </select>
     </div>
     <div class="row">
-      <label class="span2">Teléfono fijo</label>
+      <label class="span3">Dirección</label>
+      <input type="text" name="direccion" placeholder="Dirección" class="span2"/>
+    </div>
+    <div class="row">
+      <label class="span3">Teléfono fijo</label>
       <input type="tel" name="prefijo" placeholder="+" class="span1"/>
       <input type="tel" name="num_fijo" placeholder="" class="span2"/>
     </div>
     <div class="row">
-      <label class="span2">Celular</label>
+      <label class="span3">Celular</label>
       <input type="tel" name="celular" placeholder="" class="span2"/>
     </div>
     <div class="row">
-      <label class="span2">Sexo</label>
-      <select name="sexo" class="span2">
+      <label class="span3">Sexo</label>
+      <select name="sexo" class="span3">
         <option value="masculino">Masculino</option>
         <option value="femenino">Femenino</option>
       </select>
     </div>
     <div class="row">
-      <label class="span2">Fecha de nacimiento</label>
+      <label class="span3">Fecha de nacimiento</label>
       <input type="date" name="fecha" value="2013-06-24" placeholder="AAAA-MM-DD" class="span2"/>
     </div>
     <div class="row">
-      <label class="span2">Edad</label>
+      <label class="span3">Edad</label>
       <input type="number" name="edad" class="span1"/>
     </div>
     <div class="row">
-      <label class="span2">Estado civil</label>
-      <select name="estado_civil" class="span2">
+      <label class="span3">Estado civil</label>
+      <select name="estado_civil" class="span3">
         <option value="soltero">Soltero(a)</option>
         <option value="casado">Casado(a)</option>
         <option value="viudo">Viudo(a)</option>
@@ -121,8 +127,8 @@
       </select>
     </div>
     <div class="row">
-      <label class="span2">Cargo</label>
-      <select name="cargo" class="span2">
+      <label class="span3">Cargo</label>
+      <select name="cargo" class="span3">
         <option value="recursos_humanos">Recursos humanos</option>
         <option value="logistica">Logística</option>
         <option value="informatca">Informátca</option>
@@ -131,20 +137,26 @@
       </select>
     </div>
     <div class="row">
-      <label class="span2">Nivel usuario</label>
-      <select name="nivel" class="span2">
+      <label class="span3">Nivel usuario</label>
+      <select name="nivel" class="span3">
         <option value="postulante">Postulante</option>
         <option value="superadministrador">Super administrador</option>
         <option value="administrador">Administrador</option>
       </select>
     </div>
     <div class="row">
-      <label class="span2">Correo electrónico</label>
+      <label class="span3">Correo electrónico</label>
       <input type="email" placeholder="nombre@dominio.com" class="span3"/>
     </div>
     <div class="row">
-      <button type="submit">Guardar</button>
-      <button type="reset">Cancelar</button>
+      <button type="submit">
+        <p class="b_icono submit"></p>
+        <p>Guardar</p>
+      </button>
+      <button type="reset">
+        <p class="b_icono eliminar"></p>
+        <p>Cancelar</p>
+      </button>
     </div>
   </form>
 </div>

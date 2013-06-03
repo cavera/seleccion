@@ -13,6 +13,8 @@
         <div id="logo"></div>
         <nav>
           <ul id="menu">
+            <li class="item"><a href="#">
+                <p class="typicn home"></p><span class="i_cero">Inicio</span></a></li>
             <li class="item">
               <p class="typicn group"></p><span class="i_uno">Postulantes</span>
               <ul class="submenu1">
@@ -75,6 +77,317 @@
         </nav>
       </header>
       <section id="contenido">
+        <div class="elementos">
+          <form class="newform">
+            <h2>Registro de cargo</h2>
+            <div class="row columna_m">
+              <label class="span3">Cargo</label>
+              <input type="text" placeholder="Cargo" name="cargo" class="span4">
+            </div>
+            <div class="row">
+              <h3>Seleccionar evaluación</h3>
+            </div>
+            <div class="row">
+              <fieldset>
+                <legend>Conocimientos</legend>
+                <div class="grupo_pruebas">
+                  <input type="checkbox" name="conocimiento1"><span>Prueba 1</span>
+                  <input type="checkbox" name="conocimiento1"><span>Prueba 2</span>
+                  <input type="checkbox" name="conocimiento1"><span>Prueba 3</span>
+                  <input type="checkbox" name="conocimiento1"><span>Prueba 4</span>
+                  <input type="checkbox" name="conocimiento1"><span>Prueba 5</span>
+                  <input type="checkbox" name="conocimiento1"><span>Prueba 6</span>
+                  <input type="checkbox" name="conocimiento1"><span>Prueba 7</span>
+                  <input type="checkbox" name="conocimiento1"><span>Prueba 8</span>
+                </div>
+              </fieldset>
+            </div>
+            <div class="row">
+              <fieldset>
+                <legend>Sicotécnica</legend>
+                <div class="grupo_pruebas">
+                  <input type="checkbox" name="conocimiento2"><span>Prueba 1</span>
+                  <input type="checkbox" name="conocimiento2"><span>Prueba 2</span>
+                  <input type="checkbox" name="conocimiento2"><span>Prueba 3</span>
+                  <input type="checkbox" name="conocimiento2"><span>Prueba 4</span>
+                  <input type="checkbox" name="conocimiento2"><span>Prueba 5</span>
+                  <input type="checkbox" name="conocimiento2"><span>Prueba 6</span>
+                  <input type="checkbox" name="conocimiento2"><span>Prueba 7</span>
+                  <input type="checkbox" name="conocimiento2"><span>Prueba 8</span>
+                </div>
+              </fieldset>
+            </div>
+            <div class="clearfix">	</div>
+            <div class="row columna_m">
+              <button type="submit">
+                <p class="b_icono submit"></p>
+                <p>Guardar</p>
+              </button>
+              <button type="reset">
+                <p class="b_icono eliminar"></p>
+                <p>Cancelar</p>
+              </button>
+            </div>
+            <div class="clearfix">	</div>
+          </form>
+        </div>
+        <div class="elementos form_tabla">
+          <form>
+            <h2>Listar cargo</h2>
+            <div class="row">
+              <label class="span2">Filtrar cargo</label>
+              <input type="text" placeholder="Cargo" name="cargo" class="span3">
+              <button class="nuevo">
+                <p class="b_icono nuevo"></p>
+                <p>Nuevo</p>
+              </button>
+              <button class="editar">
+                <p class="b_icono editar"></p>
+                <p>Editar</p>
+              </button>
+              <button class="eliminar">
+                <p class="b_icono eliminar"></p>
+                <p>Cancelar</p>
+              </button>
+            </div>
+            <div class="row columna_m">
+              <table class="tabla_small">
+                <thead>
+                  <tr>
+                    <th>Cargo</th>
+                    <th>Editar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Analista Programador</td>
+                    <td>
+                      <input type="checkbox">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Analista Programador</td>
+                    <td>
+                      <input type="checkbox">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Analista Programador</td>
+                    <td>
+                      <input type="checkbox">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Analista Programador</td>
+                    <td>
+                      <input type="checkbox">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </form>
+          <div class="row">
+            <div class="paginator"><a href="#">prev</a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">next</a></div>
+          </div>
+        </div>
+        <div class="elementos form_tabla">
+          <form>
+            <h2>Programar evaluación</h2>
+            <div class="row">
+              <label class="span2">Buscar postulante</label>
+              <input type="search" placeholder="Postulante" class="span3">
+              <button type="submit">
+                <p class="b_icono buscar"></p>
+                <p>Buscar</p>
+              </button>
+              <label class="span2">Fecha de evaluación</label>
+              <input type="date" name="fecha" value="" placeholder="AAAA-MM-DD" class="span2">
+            </div>
+            <div class="row columna_m">	
+              <button class="invitar">
+                <p class="b_icono submit"></p>
+                <p>Guardar</p>
+              </button>
+              <button class="editar">
+                <p class="b_icono editar"></p>
+                <p>Editar</p>
+              </button>
+              <button class="eliminar">
+                <p class="b_icono eliminar"></p>
+                <p>Cancelar</p>
+              </button>
+            </div>
+            <div class="row">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Nombres y apellidos 
+                      <input type="checkbox">
+                    </th>
+                    <th>Cargo
+                      <input type="checkbox">
+                    </th>
+                    <th>Fecha evaluación
+                      <input type="checkbox">
+                    </th>
+                    <th>Editar</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Nombres y apellidos</td>
+                    <td>Cargo</td>
+                    <td>2013-06-06</td>
+                    <td> 
+                      <input type="checkbox">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Nombres y apellidos</td>
+                    <td>Cargo</td>
+                    <td>2013-06-06</td>
+                    <td> 
+                      <input type="checkbox">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Nombres y apellidos</td>
+                    <td>Cargo</td>
+                    <td>2013-06-06</td>
+                    <td> 
+                      <input type="checkbox">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Nombres y apellidos</td>
+                    <td>Cargo</td>
+                    <td>2013-06-06</td>
+                    <td> 
+                      <input type="checkbox">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </form>
+          <div class="row">
+            <div class="paginator"><a href="#">prev</a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">next</a></div>
+          </div>
+        </div>
+        <div class="elementos form_tabla">
+          <form>
+            <h2>Invitación a postulantes</h2>
+            <div class="row">
+              <label class="span3">Buscar:</label>
+              <input type="search" placeholder="Buscar" class="span4">
+              <button type="submit">
+                <p class="b_icono buscar"></p>
+                <p>Buscar</p>
+              </button>
+            </div>
+            <div class="row">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Código</th>
+                    <th>Nombres y apellidos </th>
+                    <th>DNI</th>
+                    <th>Cargo</th>
+                    <th>Todos
+                      <input type="checkbox">
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>U000000001</td>
+                    <td>Martin Isaac García Pulache</td>
+                    <td>42951149</td>
+                    <td>Analista Programador</td>
+                    <td> 
+                      <input type="checkbox">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>U000000001</td>
+                    <td>Martin Isaac García Pulache</td>
+                    <td>42951149</td>
+                    <td>Analista Programador</td>
+                    <td> 
+                      <input type="checkbox">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>U000000001</td>
+                    <td>Martin Isaac García Pulache</td>
+                    <td>42951149</td>
+                    <td>Analista Programador</td>
+                    <td> 
+                      <input type="checkbox">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>U000000001</td>
+                    <td>Martin Isaac García Pulache</td>
+                    <td>42951149</td>
+                    <td>Analista Programador</td>
+                    <td> 
+                      <input type="checkbox">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="row columna_m">			
+              <button class="invitar">
+                <p class="b_icono submit"></p>
+                <p>Invitar						</p>
+              </button>
+            </div>
+          </form>
+          <div class="row">
+            <div class="paginator"><a href="#">prev</a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">next</a></div>
+          </div>
+        </div>
+        <div class="elementos form_tabla">
+          <form>
+            <h2>Prueba de conocimientos</h2>
+            <div class="row">
+              <label class="span3">Buscar postulante</label>
+              <input type="search" placeholder="Postulante" class="span4">
+              <button type="submit">
+                <p class="b_icono buscar"></p>
+                <p>Buscar</p>
+              </button>
+            </div>
+          </form>
+          <div class="row">
+            <table>
+              <thead>
+                <tr>
+                  <th>Evaluación</th>
+                  <th>Cargo </th>
+                  <th>Puntaje </th>
+                  <th>Resultado</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>test1</td>
+                  <td>Analista programador</td>
+                  <td>80 pts</td>
+                  <td>Resultado de evaluación</td>
+                  <td><a href="#" class="ver_resultados">ver</a></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="row">
+            <div class="paginator"><a href="#">prev</a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">next</a></div>
+          </div>
+        </div>
         <!--la intención es que se incluya el contenido dentroe de este tag section-->
       </section>
       <footer>
@@ -83,6 +396,10 @@
         </div><a href="mailto:info@impaq.pe">info: info@impaq.pe</a>
         <p class="infoText"></p>
       </footer>
+      <script src="http://code.jquery.com/jquery.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/menu.js"></script>
+      <script src="js/behav.js"></script>
     </div>
   </body>
 </html>

@@ -1,0 +1,41 @@
+.elementos.form_tabla
+	form
+		h2 Nuevo o cargar evaluación
+		.row
+			label.span3 Tipo registro
+			select.span3(data-label='tipo_registro') 
+				option(value='carga_masiva') Carga Masiva
+				option(value='carga_manual') Carga Manual
+				input.span4(type='file',placeholder='Ruta de archivo')
+				button(type='submit') 
+					p.b_icono.cargar 
+					p Cargar
+		.row
+			table.tabla_small
+				thead
+					tr
+						th Evaluación 
+				tbody
+					tr
+						td Analista programador
+					tr
+						td Analista programador
+					tr
+						td Analista programador
+					tr
+						td Analista programador
+					tr
+						td Analista programador
+					tr
+						td Analista programador
+					tr
+						td Analista programador
+					tr
+						td Analista programador
+	.row
+		.paginator
+			a(href='#') prev
+			a(href='#') 1
+			a(href='#') 2
+			a(href='#') 3
+			a(href='#') next

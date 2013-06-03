@@ -1,0 +1,258 @@
+.elementos
+	margin 0
+	padding 0 15px
+	background rgba(white, alpha)
+	min-height 500px
+	position: relative
+.form_tabla
+		background rgba(black, .5)
+		h3
+			color white
+
+
+label
+	line-height 1.5em
+	padding-top 5px
+	float: none
+	[class*="span"]
+		float none
+
+fieldset
+	// background: rgba(color_a, .3)
+	border-top: color_a 1px solid
+	.columna_l,.columna_r,.columna_m
+		border none
+legend
+	// background: rgba(color_b, .3)
+	width auto
+	margin 0 auto
+	padding 5px
+	font-family: source_sans_proregular
+	text-align: center
+	color color_a
+
+
+input, select
+	margin 0  
+	padding 0  
+	font-size 1em 
+	outline none  
+	height 30px
+	line-height @height
+
+select
+	overflow hidden
+	position relative
+	cursor pointer
+
+.grupo_pruebas
+	border-top color_a solid 2px
+	border-left lightgray dotted thin
+	border-right lightgray dotted thin
+	background rgba(white, alpha)
+	input[type='checkbox']
+		text-align: right
+		margin 10px 5px 10px 30px
+		span
+			display inline-block
+			width 100px
+form
+	h3
+		font-size 1.2em
+		font-family: source_sans_proregular
+		margin 0
+		padding 0
+		text-align: center
+		color color_a
+
+	label 
+		text-align right
+		color white
+		font-size 1em
+		margin 0 10px
+		font-family source_sans_proregular
+	p
+		display inline-block
+	input, select
+		font-family source_sans_proregular
+		font-size 1em
+		text-align left
+		width:284px
+		background white
+		border 1px lightgray solid
+		border-radius 3px
+		margin 0 10px
+	select
+		padding 0 5px
+		box-shadow inset 0 -2px 2px rgba(black, .2)
+		background white url('../img/th-menu.png') no-repeat 100% center
+
+	input:focus, select:focus
+		border-color color_c
+.newform
+	label
+		color black
+
+.row
+	padding 0
+	margin 5px auto
+
+.columna_l, .columna_r, .columna_m
+	border-top color_b 1px solid
+	
+.columna_l,.columna_r
+	padding 10px 0
+	float left
+
+.columna_l
+	width 480px
+
+.columna_r
+	width 447px
+	
+.columna_m
+	margin-top 15px
+	margin-bottom 15px
+	text-align: center
+
+button
+	background color_b
+	border-bottom color_bd2 solid 2px
+	border-left none
+	border-right none
+	// border-top color_bl2 solid 2px
+	border-top: none
+	color:white
+	font-family source_sans_proregular
+	height 30px
+	margin 0 10px
+	padding 2px 0 0 1px
+	text-align center
+	transition all .2s
+	p
+		display inline
+		text-align left
+	p:nth-child(2)
+		float left
+		margin 7px
+		line-height 10px
+
+	.b_icono:before
+		transition all .3s
+		-o-transform scale(1)
+		-webkit-font-smoothing antialiased
+		border-right rgba(white, .4) solid 1px
+		color rgba(white, .4)
+		float left
+		font-family "Typicons", sans-serif
+		font-size 1.8em
+		padding 0
+	.b_icono
+		line-height 30px
+
+	.cargar:before
+		content:"G"
+	.nuevo:before
+		content:"5"
+	.editar:before
+		content:"9"
+	.eliminar:before
+		content:"6"
+	.buscar:before
+		content:"T"
+	.submit:before
+		content:"g"
+
+
+
+button:hover
+	border-bottom color_bl2 solid 2px	
+	.b_icono:before
+		color white
+
+input[type='file']
+	background-color white
+	background-image none 
+	-webkit-appearance  none
+	border thin gray solid 
+	box-shadow none 
+	border-radius 3px
+	padding 0 0 0 3px
+
+input[type='text'], input[type='search'], input[type='tel'], input[type='date']
+	margin 0
+
+input[type='checkbox']
+	display inline-block
+	margin 0 5px
+
+select
+	background-color transparent  
+	background-image none 
+	-webkit-appearance  none
+	border thin #EEE solid 
+	box-shadow none 
+
+// tablas
+
+thead, th, tbody, td, tr
+	margin 0
+	padding 0
+
+table
+	background white
+	text-align center
+	box-shadow 0 2px 5px rgba(black, .3)
+	max-width 100%
+	width 100%
+.tabla_small
+	width:auto
+	max-width 100%
+	min-width 20%
+	margin 0 auto
+	th,td
+		padding 6px
+thead
+	color white
+	background color_b
+	font-family source_sans_proregular
+
+th,td
+	padding 3px
+
+th
+	border white solid 1px
+	border-width 0 1px
+td
+	border lightgray solid 1px
+th:first-child, td:first-child
+	border-width 0 1px 1px 0
+th:last-child, td:last-child
+	border-width 0 0 1px 1px
+
+.grafico
+	border-top color_c 2px solid
+	background: rgba(white, alpha)
+	min-height 300px
+
+// numerador
+
+.paginator
+	position: absolute
+	bottom 15px
+	left 0
+	width 100%
+	border-top rgba(color_b, .3) thin solid
+	text-align: center
+	a
+		padding 5px 10px
+		background: white
+		color color_b
+		display inline-block
+		font-family source_sans_proregular
+	a:hover
+		background color_b
+		color white
+	span
+		.invisible
+			visibility hidden

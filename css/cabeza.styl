@@ -1,0 +1,159 @@
+// cabeza
+
+header
+	// overflow hidden
+	background rgba(black, alpha)
+	// box-shadow 0 5px 5px rgba(black, alpha/2)
+	color white
+	height 100px
+	top 0
+	width 960px
+	position fixed
+	z-index 250
+#logo
+	background color_a
+	float left
+	height 100px
+	width 220px
+	text-indent -1000
+	background-image url("../img/" + logo + ".png")
+	background-repeat no-repeat
+	background-position 20px center
+	background-size 80%
+
+// menu
+
+nav
+	display inline-block
+	height 100px
+	width auto
+#menu
+	float left
+	height 100px
+	list-style none
+	margin 0 auto
+	padding-top 10px
+.item
+	display inline-block
+	height 80px
+	text-align center
+	width 100px
+	transition all .5s
+	span
+		margin 20px 0 5px
+		display inline-block
+	p
+		margin 20px 0 0
+	a
+		color white
+		text-decoration none
+.submenu1
+	background white
+	box-shadow 0 5px 5px rgba(black, alpha/2)
+	color color_b
+	// display none
+	display block
+	height 0
+	left 0
+	list-style none
+	margin 0
+	overflow: hidden
+	position absolute
+	text-align center
+	top 100px
+	width 100%
+	z-index 200
+	transition all .5s
+.submenu_item
+	border-top color_b 2px solid
+	display inline-block
+	font-family source_sans_proregular
+	margin 20px 5px
+	padding 20px 10px
+	text-align left
+	transition all .3s
+	.typicn
+		font-size 2em
+		float left
+	p, a
+		color color_b
+		display inline-block
+		margin 0
+		transition all .3s
+	a
+		text-decoration none
+.submenu_item:hover
+	background rgba(color_b, .1)
+	p
+		color white
+	a
+		text-decoration underline
+
+.item:hover
+	.typicn:first-child
+		text-shadow 0 0 10px color_c
+	span:after
+			border-color transparent transparent white transparent;
+			border-style solid;
+			border-width 10px;
+			content ""
+			height 0;
+			position absolute;
+			top 80px
+			width 0;
+	.i_cero:after
+			left 5000px
+	.i_uno:after
+			left 360px
+	.i_dos:after
+			left 465px
+	.i_tres:after
+			left 570px
+	.i_cuatro:after
+			left 670px
+	.submenu1
+	// aparece el menú
+		// display inline-block
+		height 100px
+
+
+li#espacioUsuario
+	border-left color_b 2px solid
+	height 80px
+	padding 0 0 0
+	position absolute
+	right 0
+	top 10px
+	width 180px
+	p
+		margin auto
+#nombreUsuario
+	float left
+	height 30px
+	line-height @height
+	margin 0 5px 10px
+#salir
+	// background color_b
+	float right
+	font-size .4em
+	height 30px
+	line-height 35px
+	text-align center
+	width 30px
+	:hover
+		color color_b
+#invitaciones
+	border-top white thin solid
+	display inline-block
+	height 40px
+	line-height @height
+	margin 0 10px
+	width 160px
+	.numero
+		float left
+		font-size 2.5em
+		margin 10px 5px 0
+	p
+		float left
+		line-height 1.1em
+		margin 5px 

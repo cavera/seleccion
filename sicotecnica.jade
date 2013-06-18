@@ -1,0 +1,23 @@
+.elementos
+	form.newform(autocomplete='false')
+		h2 Prueba sicotécnica
+
+		h3 Parte 1
+		.imagen
+			img(src='img/sicotecnica1.jpg')
+			.contestar
+				.row
+					label.span1 Valor 1
+					input.span1(type='number',placeholder='A',name='valor1', min='1', max='6')
+				.row
+					label.span1 Valor 2
+					input.span1(type='number',placeholder='B',name='valor2', min='1', max='6')
+			.clearfix
+
+
+		.clearfix
+		.row.columna_m
+			button(type='submit')
+				p.b_icono.edit
+				p Contestar
+		.clearfix

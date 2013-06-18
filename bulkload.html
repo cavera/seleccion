@@ -2,17 +2,36 @@
 <div class="elementos form_tabla">
   <form>
     <h2>Nuevo o cargar datos del postulante</h2>
-    <div class="row">
-      <label class="span3">Tipo registro</label>
-      <select data-label="tipo_registro" class="span3"> 
-        <option value="carga_masiva">Carga Masiva</option>
-        <option value="carga_manual">Carga Manual</option>
+    <div class="columna_l">
+      <div class="row">
+        <label class="span2">Tipo registro</label>
+        <select data-label="tipo_registro" class="span3"> 
+          <option value="carga_masiva">Carga Masiva</option>
+          <option value="carga_manual">Carga Manual</option>
+        </select>
+      </div>
+    </div>
+    <div class="columna_r">
+      <div class="row">
         <input type="file" placeholder="Ruta de archivo" class="span4"/>
+      </div>
+      <div class="row">
         <button type="submit"> 
           <p class="b_icono cargar"> </p>
           <p>Cargar</p>
         </button>
-      </select>
+        <div class="span3">
+          <div class="preload"></div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <label class="span3">Filtrar usuario</label>
+      <input type="search" placeholder="Busqueda" class="span4"/>
+      <button type="submit">
+        <p class="b_icono buscar"></p>
+        <p>Buscar</p>
+      </button>
     </div>
     <div class="row columna_m">
       <button class="nuevo">
@@ -79,15 +98,15 @@
             <td>Fecha nac.</td>
             <td>Dirección</td>
             <td>Cargo</td>
-            <td class="celda_check">
+            <td>
               <input type="checkbox"/>
             </td>
           </tr>
         </tbody>
       </table>
     </div>
-    <div class="row">
-      <div class="paginator"><a href="#">prev</a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">next</a></div>
-    </div>
   </form>
+  <div class="row">
+    <div class="paginator"><a href="#">prev</a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">next</a></div>
+  </div>
 </div>

@@ -300,9 +300,9 @@
 }
 .elementos {
   margin: 0;
-  padding: 0 15px;
+  padding: 0 15px 40px;
   background: rgba(255,255,255,0.8);
-  min-height: 500px;
+  min-height: 400px;
   position: relative;
 }
 .form_tabla {
@@ -404,6 +404,9 @@ form select:focus {
 .newform label {
   color: #000;
 }
+.newform h3 {
+  border-bottom: rgba(0,115,66,0.3) 1px solid;
+}
 .row {
   padding: 0;
   margin: 5px auto;
@@ -434,6 +437,7 @@ button {
   border-bottom: #a95e06 solid 2px;
   border-left: none;
   border-right: none;
+  overflow: hidden;
   border-top: none;
   color: #fff;
   font-family: source_sans_proregular;
@@ -441,7 +445,9 @@ button {
   margin: 0 10px;
   padding: 2px 0 0 1px;
   text-align: center;
-  transition: all 0.2s;
+  -webkit-transition: all, 0.2s;
+  -moz-transition: all, 0.2s;
+  transition: all, 0.2s;
 }
 button p {
   display: inline;
@@ -453,7 +459,9 @@ button p:nth-child(2) {
   line-height: 10px;
 }
 button .b_icono:before {
-  transition: all 0.3s;
+  -webkit-transition: all, 0.3s;
+  -moz-transition: all, 0.3s;
+  transition: all, 0.3s;
   -o-transform: scale(1);
   -webkit-font-smoothing: antialiased;
   border-right: rgba(255,255,255,0.4) solid 1px;
@@ -543,7 +551,6 @@ table {
 }
 thead {
   color: #fff;
-  background: #f7931e;
   font-family: source_sans_proregular;
 }
 th,
@@ -551,11 +558,24 @@ td {
   padding: 3px;
 }
 th {
+  background: #f7931e;
   border: #fff solid 1px;
   border-width: 0 1px;
 }
+.th_selected {
+  background: #f9b513;
+}
 td {
   border: #d3d3d3 solid 1px;
+}
+.editable {
+  color: #000;
+  background: #d3d3d3;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+td[contenteditable='true']:focus {
+  background: #fff8d1;
+  color: #007342;
 }
 th:first-child,
 td:first-child {
@@ -570,6 +590,21 @@ td:last-child {
   background: rgba(255,255,255,0.8);
   min-height: 300px;
 }
+.imagen {
+  width: 455px;
+  min-width: 455px;
+  max-width: 100%;
+  border-top: 2px solid #f7931e;
+  background: rgba(255,255,255,0.8);
+  overflow: hidden;
+  margin: 10px auto 0;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+.contestar {
+  width: 200px;
+  float: right;
+  margin-top: 10px;
+}
 .paginator {
   position: absolute;
   bottom: 15px;
@@ -578,14 +613,16 @@ td:last-child {
   border-top: rgba(247,147,30,0.3) thin solid;
   text-align: center;
 }
-.paginator a {
+.paginator a,
+.paginator span a {
   padding: 5px 10px;
   background: #fff;
   color: #f7931e;
   display: inline-block;
   font-family: source_sans_proregular;
 }
-.paginator a:hover {
+.paginator a:hover,
+.paginator span a:hover {
   background: #f7931e;
   color: #fff;
 }
@@ -654,7 +691,9 @@ nav {
   height: 80px;
   text-align: center;
   width: 100px;
-  transition: all 0.5s;
+  -webkit-transition: all, 0.5s;
+  -moz-transition: all, 0.5s;
+  transition: all, 0.5s;
 }
 .item span {
   margin: 20px 0 5px;
@@ -682,7 +721,9 @@ nav {
   top: 100px;
   width: 100%;
   z-index: 200;
-  transition: all 0.5s;
+  -webkit-transition: all, 0.5s;
+  -moz-transition: all, 0.5s;
+  transition: all, 0.5s;
 }
 .submenu_item {
   border-top: #f7931e 2px solid;
@@ -691,7 +732,9 @@ nav {
   margin: 20px 5px;
   padding: 20px 10px;
   text-align: left;
-  transition: all 0.3s;
+  -webkit-transition: all, 0.3s;
+  -moz-transition: all, 0.3s;
+  transition: all, 0.3s;
 }
 .submenu_item .typicn {
   font-size: 2em;
@@ -702,7 +745,9 @@ nav {
   color: #f7931e;
   display: inline-block;
   margin: 0;
-  transition: all 0.3s;
+  -webkit-transition: all, 0.3s;
+  -moz-transition: all, 0.3s;
+  transition: all, 0.3s;
 }
 .submenu_item a {
   text-decoration: none;
@@ -760,6 +805,13 @@ li#espacioUsuario {
 li#espacioUsuario p {
   margin: auto;
 }
+li#espacioUsuario a {
+  color: #fff;
+  text-decoration: none;
+}
+li#espacioUsuario a:hover {
+  color: #f7931e;
+}
 #nombreUsuario {
   float: left;
   height: 30px;
@@ -816,21 +868,55 @@ li#espacioUsuario p {
 #contenido img {
   max-width: 100%;
 }
-#grupoInfo {
+#grupoInfo,
+#portada {
   position: absolute;
-  top: 200px;
   width: 100%;
   overflow: hidden;
 }
-.infoIndicador {
-  background: rgba(0,0,0,0.8);
+#grupoInfo {
+  top: 200px;
+}
+#portada {
+  top: 100px;
+}
+.infoIndicador,
+.bienvenida {
   border-top: #f9b513 solid 2px;
   float: left;
-  height: 200px;
   margin: 0;
   padding: 10px;
-  width: 280px;
   font-family: source_sans_prolight;
+  width: 280px;
+}
+.bienvenida {
+  background: rgba(255,255,255,0.8);
+  width: 360px;
+  margin: 0 20px;
+  padding: 10px 10px 20px;
+}
+.bienvenida .titulo {
+  color: #f7931e;
+  float: left;
+  font-size: 3em;
+  line-height: 1em;
+  background: none;
+}
+.bienvenida .typicn {
+  color: rgba(247,147,30,0.8);
+  float: right;
+  line-height: 1em;
+  margin: 10px 0 0;
+}
+.bienvenida p {
+  color: #000;
+  float: left;
+  font-size: 1.2em;
+  line-height: 1em;
+}
+.infoIndicador {
+  background: rgba(0,0,0,0.8);
+  height: 200px;
 }
 .infoIndicador .numero {
   color: #f9b513;

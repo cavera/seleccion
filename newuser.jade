@@ -1,5 +1,5 @@
 .elementos
-	form.newform
+	form.newform(autocomplete='false')
 		h2 Datos generales del postulante
 		.columna_l
 			.row
@@ -17,7 +17,7 @@
 		.columna_r
 			.row
 				label.span2 País
-				select.span3(name='pais')
+				select.span3(name='pais',required)
 					option(value='peru') Perú
 					option(value='ecuador') Ecuador
 					option(value='colombia') Colombia
@@ -25,7 +25,7 @@
 					option(value='bolivia') Bolivia
 			.row
 				label.span2 Ciudad
-				select.span3(name='ciudad')
+				select.span3(name='ciudad',required)
 					option(value='ANCASH') ANCASH
 					option(value='LAMBAYEQUE') LAMBAYEQUE
 					option(value='LIMA') LIMA
@@ -36,76 +36,39 @@
 					option(value='TACNA') TACNA
 			.row
 				label.span2 Distrito
-				select.span3(name='distrito')
+				select.span3(name='distrito',required)
 					option(value='Ancón') Ancón
 					option(value='Ate') Ate
 					option(value='Barranco') Barranco
 					option(value='Breña') Breña
 					option(value='Carabayllo') Carabayllo
-					option(value='Cercado de Lima') Cercado de Lima
-					option(value='Chaclacayo') Chaclacayo
-					option(value='Chorrillos') Chorrillos
-					option(value='Cieneguilla') Cieneguilla
-					option(value='Comas') Comas
-					option(value='El Agustino') El Agustino
-					option(value='Independencia') Independencia
-					option(value='Jesús María') Jesús María
-					option(value='La Molina') La Molina
-					option(value='La Victoria') La Victoria
-					option(value='Lince') Lince
-					option(value='Los Olivos') Los Olivos
-					option(value='Lurigancho-Chosica') Lurigancho-Chosica
-					option(value='Lurín') Lurín
-					option(value='Magdalena del Mar') Magdalena del Mar
-					option(value='Pueblo Libre') Pueblo Libre
-					option(value='Miraflores') Miraflores
-					option(value='Pachacámac') Pachacámac
-					option(value='Pucusana') Pucusana
-					option(value='Puente Piedra') Puente Piedra
-					option(value='Punta Hermosa') Punta Hermosa
-					option(value='Punta Negra') Punta Negra
-					option(value='Rímac') Rímac
-					option(value='San Bartolo') San Bartolo
-					option(value='San Borja') San Borja
-					option(value='San Isidro') San Isidro
-					option(value='San Juan de Lurigancho') San Juan de Lurigancho
-					option(value='San Juan de Miraflores') San Juan de Miraflores
-					option(value='San Luis') San Luis
-					option(value='San Martín de Porres') San Martín de Porres
-					option(value='San Miguel') San Miguel
-					option(value='Santa Anita') Santa Anita
-					option(value='Santa María del Mar') Santa María del Mar
-					option(value='Santa Rosa') Santa Rosa
-					option(value='Santiago de Surco') Santiago de Surco
-					option(value='Surquillo') Surquillo
-					option(value='Villa El Salvador') Villa El Salvador
-					option(value='Villa María del Triunfo') Villa María del Triunfo
+
 			.row
 				label.span2 Dirección
-				input.span2(type='text',name='direccion',placeholder='Dirección')
+				input.span2(type='text',name='direccion',placeholder='Dirección',required)
 			.row
 				label.span2 Teléfono fijo
 				input.span1(type='tel',name='prefijo',placeholder='+', pattern='[0-9]*')
-				input.span2(type='tel',name='num_fijo',placeholder='', pattern='[0-9]*')
+				input.span2(type='tel',name='num_fijo',placeholder='', pattern='[0-9]*',required)
 			.row
 				label.span2 Celular
-				input.span2(type='tel',name='celular',placeholder='', pattern='[0-9]*')
+				input.span2(type='tel',name='celular',placeholder='', pattern='[0-9]*',required)
 		.columna_l
 			.row
 				label.span2 Sexo
-				select.span3(name='sexo')
+				select.span3(name='sexo',required)
 					option(value='masculino') Masculino
 					option(value='femenino') Femenino
 			.row
 				label.span2 Fecha de nacimiento
-				input.span2(type='date',name='fecha',value='2013-06-24', placeholder='AAAA-MM-DD')
+				input.span2(type='text',name='fecha', placeholder='aa-mm-yy',required)
 			.row
 				label.span2 Edad
-				input.span1(type='number',name='edad')
+				input.span1(type='text',name='edad',required)
 
 			.row
 				label.span2 Estado civil
-				select.span3(name='estado_civil')
+				select.span3(name='estado_civil',required)
 					option(value='soltero') Soltero(a)
 					option(value='casado') Casado(a)
 					option(value='viudo') Viudo(a)
@@ -113,7 +76,8 @@
 		.columna_r
 			.row
 				label.span2 Cargo
-				select.span3(name='cargo')
+				select.span3(name='cargo',required)
+					option(value='') 
 					option(value='recursos_humanos') Recursos humanos
 					option(value='logistica') Logística
 					option(value='informatca') Informátca
@@ -121,13 +85,13 @@
 					option(value='manual') Asignación manual
 			.row
 				label.span2 Nivel usuario
-				select.span3(name='nivel')
+				select.span3(name='nivel',required)
 					option(value='postulante') Postulante
 					option(value='superadministrador') Super administrador
 					option(value='administrador') Administrador
 			.row
 				label.span2 Correo electrónico
-				input.span3(type='email',placeholder='nombre@dominio.com')
+				input.span3(type='email',placeholder='nombre@dominio.com',required)
 		.clearfix
 		.row.columna_m
 			button(type='submit')

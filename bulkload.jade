@@ -1,15 +1,28 @@
 .elementos.form_tabla
 	form
 		h2 Nuevo o cargar datos del postulante
-		.row
-			label.span3 Tipo registro
-			select.span3(data-label='tipo_registro') 
-				option(value='carga_masiva') Carga Masiva
-				option(value='carga_manual') Carga Manual
+		.columna_l
+			.row
+				label.span2 Tipo registro
+				select.span3(data-label='tipo_registro') 
+					option(value='carga_masiva') Carga Masiva
+					option(value='carga_manual') Carga Manual
+		.columna_r
+			.row
 				input.span4(type='file',placeholder='Ruta de archivo')
+			.row
 				button(type='submit') 
 					p.b_icono.cargar 
 					p Cargar
+				.span3
+					.preload
+
+		.row
+			label.span3 Filtrar usuario
+			input.span4(type='search',placeholder='Busqueda')
+			button(type='submit')
+				p.b_icono.buscar
+				p Buscar
 		.row.columna_m
 			button(class='nuevo')
 				p.b_icono.nuevo
@@ -59,7 +72,7 @@
 						td Fecha nac.
 						td Dirección
 						td Cargo
-						td.celda_check
+						td
 							input(type='checkbox')
 
 	.row

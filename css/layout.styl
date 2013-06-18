@@ -1,6 +1,10 @@
 @import('sourcesans')
 @import('typicons')
 
+transition(prop, tiempo)
+	-webkit-transition prop, tiempo
+	-moz-transition prop, tiempo
+	transition prop, tiempo
 
 cliente = 'edyficar'
 @import(cliente)
@@ -8,7 +12,7 @@ cliente = 'edyficar'
 // generales
 
 body
-	background-color: color_a
+	background-color color_a
 	background-attachment fixed
 	background-image url("../img/" + imagenFondo + ".jpg")
 	background-repeat no-repeat
@@ -25,7 +29,7 @@ div, header, nav, ul, li, footer, form, p
 p
 	margin 0
 ::selection
-	background: color_b
+	background color_b
 	color white
 
 #contenedor
@@ -42,49 +46,79 @@ p
 	padding 5px
 	p
 		color white
-		display: inline-block
+		display inline-block
 		margin 5px
 
 #contenido
 	margin 104px 0 0 0
 	h2
-		font-size: 1.3em
-		background: rgba(black, alpha)
+		font-size 1.3em
+		background rgba(black, alpha)
 		color white
 		margin 0 auto 10px
-		text-align: center
+		text-align center
 
 	img
 		max-width 100%
-#grupoInfo
+#grupoInfo, #portada
 	position absolute
-	top 200px
 	width 100%
-	overflow: hidden
-.infoIndicador
-	background: rgba(black, alpha)
-	border-top: color_c solid 2px
+	overflow hidden
+
+#grupoInfo
+	top 200px
+
+#portada
+	top 100px
+
+.infoIndicador, .bienvenida
+	border-top color_c solid 2px
 	float left
-	height 200px
 	margin 0
 	padding 10px
+	font-family source_sans_prolight
 	width 280px
-	font-family: source_sans_prolight
+
+.bienvenida
+	background rgba(white, alpha)
+	width 360px
+	margin 0 20px
+	padding 10px 10px 20px
+	.titulo
+		color color_b
+		float left
+		font-size 3em
+		line-height 1em
+		background none
+	.typicn
+		color rgba(color_b, alpha)
+		float right
+		line-height 1em
+		margin 10px 0 0
+	p
+		color black	
+		float left
+		font-size 1.2em
+		line-height 1em
+
+.infoIndicador
+	background rgba(black, alpha)
+	height 200px
 	.numero
 		color color_c
-		float: left
-		font-size: 5em
-		line-height: 1em
+		float left
+		font-size 5em
+		line-height 1em
 	.typicn
 		color color_c
-		float: right
-		line-height: 1em
+		float right
+		line-height 1em
 		margin 10px 0 0
 	p
 		color white	
-		float: left
-		font-size: 1.8em
-		line-height: 1em
+		float left
+		font-size 1.8em
+		line-height 1em
 .infoIndicador:nth-child(2)
 	margin 0 30px
 
@@ -93,34 +127,34 @@ p
 // pie
 
 footer
-	background: rgba(black,alpha)
+	background rgba(black,alpha)
 	border-top:white solid thin
 	color:white
-	height: 30px
+	height 30px
 	a
-		text-decoration: underline
+		text-decoration underline
 		padding:0 5px
-		display: inline-block
-		height: 30px
-		font-size: .8em
-		line-height: 30px
+		display inline-block
+		height 30px
+		font-size .8em
+		line-height 30px
 		color:white
-		font-family: source_sans_prolight
+		font-family source_sans_prolight
 	a:hover
-			font-family: source_sans_proregular
+			font-family source_sans_proregular
 	a:visited
 			color:white
 .infoText
-	text-align: center
+	text-align center
 	font-size:.8em
-	margin: 5px
+	margin 5px
 
 .icono 
-	width: 30px
-	height: 30px
-	background: color_aa
-	font-size: .5em
-	float: left
+	width 30px
+	height 30px
+	background color_aa
+	font-size .5em
+	float left
 	line-height:40px
-	text-align: center
+	text-align center
 	p

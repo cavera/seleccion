@@ -1,43 +1,55 @@
 
 <div class="elementos">
-  <form class="form_tabla">
+  <form class="newform">
     <h2>Registro de cargo</h2>
-    <div class="row">
+    <div class="row columna_m">
       <label class="span3">Cargo</label>
-      <input type="text" placeholder="Cargo" name="cargo" class="span2"/>
+      <input type="text" placeholder="Cargo" name="cargo" class="span4"/>
     </div>
     <div class="row">
       <h3>Seleccionar evaluación</h3>
     </div>
     <div class="row">
-      <h4>Conocimientos</h4>
-      <div class="grupo_pruebas">
-        <input type="checkbox" name="conocimiento1"/><span>Prueba 1</span>
-        <input type="checkbox" name="conocimiento1"/><span>Prueba 2</span>
-        <input type="checkbox" name="conocimiento1"/><span>Prueba 3</span>
-        <input type="checkbox" name="conocimiento1"/><span>Prueba 4</span>
-        <input type="checkbox" name="conocimiento1"/><span>Prueba 5</span>
-        <input type="checkbox" name="conocimiento1"/><span>Prueba 6</span>
-        <input type="checkbox" name="conocimiento1"/><span>Prueba 7</span>
-        <input type="checkbox" name="conocimiento1"/><span>Prueba 8</span>
-      </div>
+      <fieldset>
+        <legend>Conocimientos</legend>
+        <div class="grupo_pruebas">
+          <input type="checkbox" name="conocimiento1"/><span>Prueba 1</span>
+          <input type="checkbox" name="conocimiento1"/><span>Prueba 2</span>
+          <input type="checkbox" name="conocimiento1"/><span>Prueba 3</span>
+          <input type="checkbox" name="conocimiento1"/><span>Prueba 4</span>
+          <input type="checkbox" name="conocimiento1"/><span>Prueba 5</span>
+          <input type="checkbox" name="conocimiento1"/><span>Prueba 6</span>
+          <input type="checkbox" name="conocimiento1"/><span>Prueba 7</span>
+          <input type="checkbox" name="conocimiento1"/><span>Prueba 8</span>
+        </div>
+      </fieldset>
     </div>
     <div class="row">
-      <h4>Sicotécnica</h4>
-      <div class="grupo_pruebas">
-        <input type="checkbox" name="conocimiento1"/><span>Prueba 1</span>
-        <input type="checkbox" name="conocimiento1"/><span>Prueba 2</span>
-        <input type="checkbox" name="conocimiento1"/><span>Prueba 3</span>
-        <input type="checkbox" name="conocimiento1"/><span>Prueba 4</span>
-        <input type="checkbox" name="conocimiento1"/><span>Prueba 5</span>
-        <input type="checkbox" name="conocimiento1"/><span>Prueba 6</span>
-        <input type="checkbox" name="conocimiento1"/><span>Prueba 7</span>
-        <input type="checkbox" name="conocimiento1"/><span>Prueba 8</span>
-      </div>
+      <fieldset>
+        <legend>Sicotécnica</legend>
+        <div class="grupo_pruebas">
+          <input type="checkbox" name="conocimiento2"/><span>Prueba 1</span>
+          <input type="checkbox" name="conocimiento2"/><span>Prueba 2</span>
+          <input type="checkbox" name="conocimiento2"/><span>Prueba 3</span>
+          <input type="checkbox" name="conocimiento2"/><span>Prueba 4</span>
+          <input type="checkbox" name="conocimiento2"/><span>Prueba 5</span>
+          <input type="checkbox" name="conocimiento2"/><span>Prueba 6</span>
+          <input type="checkbox" name="conocimiento2"/><span>Prueba 7</span>
+          <input type="checkbox" name="conocimiento2"/><span>Prueba 8</span>
+        </div>
+      </fieldset>
     </div>
-    <div class="row">
-      <button type="submit">Guardar</button>
-      <button type="reset">Cancelar</button>
+    <div class="clearfix">	</div>
+    <div class="row columna_m">
+      <button type="submit">
+        <p class="b_icono submit"></p>
+        <p>Guardar</p>
+      </button>
+      <button type="reset">
+        <p class="b_icono eliminar"></p>
+        <p>Cancelar</p>
+      </button>
     </div>
+    <div class="clearfix">	</div>
   </form>
 </div>

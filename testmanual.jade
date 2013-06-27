@@ -1,9 +1,10 @@
 .elementos
 	form.newform
-		h2 Registro de cargo
-		.row.columna_m
-			label.span3 Cargo
-			input.span4(type='text',placeholder='Cargo', name='cargo')
+		h2 Asignación Examen Manual
+		.row
+			label.span3(for='nombre_codigo') Nombres
+			input.span2.nombre_codigo(type='text',placeholder='Código', name='nombre_codigo')
+			input.span4(type='text',placeholder='Nombre', name='nombre')
 		.row
 			h3 Seleccionar evaluación
 		.row
@@ -11,8 +12,8 @@
 				legend Conocimientos
 				.grupo_pruebas
 					.prueba
-						input(type='checkbox', name='conocimiento1')
-						span Prueba 1
+						input(type='checkbox', name='conocimiento1') test
+						span texto de prueba largo, solo para pruebas etc etc etc
 					.prueba
 						input(type='checkbox', name='conocimiento1')
 						span Prueba 2
@@ -36,7 +37,7 @@
 						span Prueba 8
 		.row
 			fieldset
-				legend Sicotécnica
+				legend Sicotécnico
 				.grupo_pruebas
 					.prueba
 						input(type='checkbox', name='conocimiento2')

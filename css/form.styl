@@ -46,15 +46,23 @@ select
 
 .grupo_pruebas
 	border-top color_a solid 2px
-	border-left lightgray dotted thin
-	border-right lightgray dotted thin
+	
 	background rgba(white, alpha)
-	input[type='checkbox']
-		text-align right
-		margin 10px 5px 10px 30px
-		span
-			display inline-block
-			width 100px
+	overflow: hidden
+	width 800px
+	margin 0 auto
+	.prueba
+		padding 7px 5px 5px 25px
+		margin-left 20px
+		width 350px
+		float: left
+		input[type='checkbox']
+			height 20px
+			margin-left -20px
+			margin-bottom 0
+			text-align right
+			float: left
+
 form
 	h3
 		font-size 1.2em
@@ -87,7 +95,8 @@ form
 		background white url('../img/th-menu.png') no-repeat 100% center
 
 	input:focus, select:focus
-		border-color color_c
+		outline color_c solid 1px
+		border color_c solid 1px
 .newform
 	label
 		color black
@@ -228,6 +237,10 @@ th
 
 .th_selected
 	background color_c
+	.up
+		// 
+	.down
+		// 
 
 td
 	border lightgray solid 1px
@@ -248,6 +261,38 @@ th:first-child, td:first-child
 	border-width 0 1px 1px 0
 th:last-child, td:last-child
 	border-width 0 0 1px 1px
+
+th a,th a:visited
+	text-decoration none
+	color white
+
+th a:hover
+	text-decoration none
+	color white
+
+th.sorted a,th.sortable a
+	background-position right
+	display block
+
+th.sortable a
+	background-image url("../img/arrow_off.png")
+    background-repeat no-repeat
+
+th.order1 a
+	background-image url("../img/arrow_down.png")
+    background-repeat no-repeat
+
+th.order2 a
+	background-image url("../img/arrow_up.png")
+    background-repeat no-repeat
+
+/****************************/
+​
+
+.pagebanner
+  visibility hidden
+
+// otros
 
 .grafico
 	border-top color_c 2px solid

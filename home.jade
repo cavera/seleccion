@@ -5,18 +5,18 @@ html
 		meta(name='viewport',content='width=device-width, initial-scale=1.0')
 		//- bootstrap
 		link(href='css/bootstrap.css',rel='stylesheet',media='screen')
-		link(href='css/layout.css',rel='stylesheet',media='screen')
 		link(href='css/gris_simple/jquery-ui-1.10.3.custom.css',,rel='stylesheet',media='screen')
+		link(href='css/layout.css',rel='stylesheet',media='screen')
 		title Home
 	body
 		#contenedor
 			include cabeza
 			section#contenido
-				//- include bulkload
+				include bulkload
 				//- include newuser
 				//- include viewuser
 				
-				include newcargo
+				//- include newcargo
 				//- include viewcargo
 				//- include dateset
 				//- include invitemail
@@ -32,7 +32,7 @@ html
 				//- include report
 				//- include sicotecnica
 
-				include testmanual
+				//- include testmanual
 
 				//- la intención es que se incluya el contenido dentroe de este tag section
 			include pie

@@ -80,6 +80,8 @@ form
 		font-family source_sans_proregular
 	p
 		display inline-block
+		// esto es adicional
+		color white
 	input, select
 		font-family source_sans_proregular
 		font-size 1em
@@ -124,6 +126,27 @@ form
 	margin-top 15px
 	margin-bottom 15px
 	text-align center
+
+// barra progreso
+
+#progressbar
+	height 20px
+	background: rgba(black, alpha)
+	border: 0
+	position: relative
+	border-top 1px white solid
+	.ui-widget-header
+		background: color_b
+	.progress-label
+		position absolute
+		z-index 9000
+		top 0
+		right 3px
+		color: white
+		line-height: @height
+		text-align-last: center
+		font-family: source_sans_prolight
+		font-size .8em
 
 button
 	background color_b
@@ -245,8 +268,6 @@ th
 td
 	border lightgray solid 1px
 
-
-
 .editable
 	color black
 	background lightgray
@@ -286,7 +307,7 @@ th.order2 a
 	background-image url("../img/arrow_up.png")
     background-repeat no-repeat
 
-/****************************/
+// termina tabla
 ​
 
 .pagebanner

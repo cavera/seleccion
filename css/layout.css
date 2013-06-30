@@ -320,7 +320,7 @@ label [class*="span"] {
   float: none;
 }
 fieldset {
-  border-top: #007342 1px solid;
+  border-top: #8d181a 1px solid;
 }
 fieldset .columna_l,
 fieldset .columna_r,
@@ -333,7 +333,7 @@ legend {
   padding: 5px;
   font-family: source_sans_proregular;
   text-align: center;
-  color: #007342;
+  color: #8d181a;
 }
 input,
 select {
@@ -350,7 +350,7 @@ select {
   cursor: pointer;
 }
 .grupo_pruebas {
-  border-top: #007342 solid 2px;
+  border-top: #8d181a solid 2px;
   background: rgba(255,255,255,0.8);
   overflow: hidden;
   width: 800px;
@@ -375,7 +375,7 @@ form h3 {
   margin: 0;
   padding: 0;
   text-align: center;
-  color: #007342;
+  color: #8d181a;
 }
 form label {
   text-align: right;
@@ -386,6 +386,7 @@ form label {
 }
 form p {
   display: inline-block;
+  color: #fff;
 }
 form input,
 form select {
@@ -412,7 +413,7 @@ form select:focus {
   color: #000;
 }
 .newform h3 {
-  border-bottom: rgba(0,115,66,0.3) 1px solid;
+  border-bottom: rgba(141,24,26,0.3) 1px solid;
 }
 .row {
   padding: 0;
@@ -438,6 +439,27 @@ form select:focus {
   margin-top: 15px;
   margin-bottom: 15px;
   text-align: center;
+}
+#progressbar {
+  height: 20px;
+  background: rgba(0,0,0,0.8);
+  border: 0;
+  position: relative;
+  border-top: 1px #fff solid;
+}
+#progressbar .ui-widget-header {
+  background: #f7931e;
+}
+#progressbar .progress-label {
+  position: absolute;
+  z-index: 9000;
+  top: 0;
+  right: 3px;
+  color: #fff;
+  line-height: 20px;
+  text-align-last: center;
+  font-family: source_sans_prolight;
+  font-size: 0.8em;
 }
 button {
   background: #f7931e;
@@ -582,7 +604,7 @@ td {
 }
 td[contenteditable='true']:focus {
   background: #fff8d1;
-  color: #007342;
+  color: #8d181a;
 }
 th:first-child,
 td:first-child {
@@ -618,7 +640,6 @@ th.order2 a {
   background-image: url("../img/arrow_up.png");
 }
 background-repeat no-repeat,
-/****************************/,
 ,
 .pagebanner,
 visibility hidden,
@@ -667,9 +688,9 @@ visibility hidden,
   visibility: hidden;
 }
 body {
-  background-color: #007342;
+  background-color: #8d181a;
   background-attachment: fixed;
-  background-image: url("../img/bg_e.jpg");
+  background-image: url("../img/bg.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   font-family: source_sans_prolight;
@@ -685,6 +706,12 @@ a {
 }
 p {
   margin: 0;
+}
+.texto_izquierda {
+  text-align: left;
+}
+.texto_derecha {
+  text-align-last: right;
 }
 ::selection {
   background: #f7931e;
@@ -706,12 +733,12 @@ header {
   z-index: 250;
 }
 #logo {
-  background: #007342;
+  background: #8d181a;
   float: left;
   height: 100px;
   width: 220px;
   text-indent: -1000;
-  background-image: url("../img/logo_e.png");
+  background-image: url("../img/logo_i.png");
   background-repeat: no-repeat;
   background-position: 20px center;
   background-size: 80%;
@@ -1011,7 +1038,7 @@ footer a:visited {
 .icono {
   width: 30px;
   height: 30px;
-  background: rgba(0,115,66,0.8);
+  background: rgba(141,24,26,0.8);
   font-size: 0.5em;
   float: left;
   line-height: 40px;

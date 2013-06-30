@@ -10,12 +10,13 @@
 		.columna_r
 			.row
 				input.span4(type='file',placeholder='Ruta de archivo')
-			.row
+
 				button(type='submit') 
 					p.b_icono.cargar 
 					p Cargar
-				.span3
-					.preload
+			.row
+				#progressbar
+					.progress-label
 
 		.row
 			label.span3 Filtrar usuario

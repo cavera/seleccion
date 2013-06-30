@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.css" rel="stylesheet" media="screen">
-    <link href="css/layout.css" rel="stylesheet" media="screen">
     <link href="css/gris_simple/jquery-ui-1.10.3.custom.css" rel="stylesheet" media="screen">
+    <link href="css/layout.css" rel="stylesheet" media="screen">
     <title>Home</title>
   </head>
   <body>
@@ -78,178 +78,116 @@
         </nav>
       </header>
       <section id="contenido">
-        <div class="elementos">
-          <form class="newform">
-            <h2>Registro de cargo</h2>
-            <div class="row columna_m">
-              <label class="span3">Cargo</label>
-              <input type="text" placeholder="Cargo" name="cargo" class="span4">
+        <div class="elementos form_tabla">
+          <form>
+            <h2>Nuevo o cargar datos del postulante</h2>
+            <div class="columna_l">
+              <div class="row">
+                <label class="span2">Tipo registro</label>
+                <select data-label="tipo_registro" class="span3"> 
+                  <option value="carga_masiva">Carga Masiva</option>
+                  <option value="carga_manual">Carga Manual</option>
+                </select>
+              </div>
             </div>
-            <div class="row">
-              <h3>Seleccionar evaluación</h3>
-            </div>
-            <div class="row">
-              <fieldset>
-                <legend>Conocimientos</legend>
-                <div class="grupo_pruebas">
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento1"><span>Prueba 1</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento1"><span>Prueba 2</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento1"><span>Prueba 3</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento1"><span>Prueba 4</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento1"><span>Prueba 5</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento1"><span>Prueba 6</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento1"><span>Prueba 7</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento1"><span>Prueba 8</span>
-                  </div>
+            <div class="columna_r">
+              <div class="row">
+                <input type="file" placeholder="Ruta de archivo" class="span4">
+                <button type="submit"> 
+                  <p class="b_icono cargar"> </p>
+                  <p>Cargar</p>
+                </button>
+              </div>
+              <div class="row">
+                <div id="progressbar">
+                  <div class="progress-label"></div>
                 </div>
-              </fieldset>
+              </div>
             </div>
             <div class="row">
-              <fieldset>
-                <legend>Sicotécnica</legend>
-                <div class="grupo_pruebas">
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento2"><span>Prueba 1</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento2"><span>Prueba 2</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento2"><span>Prueba 3</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento2"><span>Prueba 4</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento2"><span>Prueba 5</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento2"><span>Prueba 6</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento2"><span>Prueba 7</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento2"><span>Prueba 8</span>
-                  </div>
-                </div>
-              </fieldset>
-            </div>
-            <div class="clearfix">	</div>
-            <div class="row columna_m">
+              <label class="span3">Filtrar usuario</label>
+              <input type="search" placeholder="Busqueda" class="span4">
               <button type="submit">
-                <p class="b_icono submit"></p>
-                <p>Guardar</p>
-              </button>
-              <button type="reset">
-                <p class="b_icono eliminar"></p>
-                <p>Cancelar</p>
+                <p class="b_icono buscar"></p>
+                <p>Buscar</p>
               </button>
             </div>
-            <div class="clearfix">	</div>
-          </form>
-        </div>
-        <div class="elementos">
-          <form class="newform">
-            <h2>Asignación Examen Manual</h2>
-            <div class="row">
-              <label for="nombre_codigo" class="span3">Nombres</label>
-              <input type="text" placeholder="Código" name="nombre_codigo" class="span2 nombre_codigo">
-              <input type="text" placeholder="Nombre" name="nombre" class="span4">
-            </div>
-            <div class="row">
-              <h3>Seleccionar evaluación</h3>
-            </div>
-            <div class="row">
-              <fieldset>
-                <legend>Conocimientos</legend>
-                <div class="grupo_pruebas">
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento1"><span>texto de prueba largo, solo para pruebas etc etc etc</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento1"><span>Prueba 2</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento1"><span>Prueba 3</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento1"><span>Prueba 4</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento1"><span>Prueba 5</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento1"><span>Prueba 6</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento1"><span>Prueba 7</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento1"><span>Prueba 8</span>
-                  </div>
-                </div>
-              </fieldset>
-            </div>
-            <div class="row">
-              <fieldset>
-                <legend>Sicotécnico</legend>
-                <div class="grupo_pruebas">
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento2"><span>Prueba 1</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento2"><span>Prueba 2</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento2"><span>Prueba 3</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento2"><span>Prueba 4</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento2"><span>Prueba 5</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento2"><span>Prueba 6</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento2"><span>Prueba 7</span>
-                  </div>
-                  <div class="prueba">
-                    <input type="checkbox" name="conocimiento2"><span>Prueba 8</span>
-                  </div>
-                </div>
-              </fieldset>
-            </div>
-            <div class="clearfix">	</div>
             <div class="row columna_m">
-              <button type="submit">
-                <p class="b_icono submit"></p>
-                <p>Guardar</p>
+              <button class="nuevo">
+                <p class="b_icono nuevo"></p>
+                <p>Nuevo</p>
               </button>
-              <button type="reset">
+              <button class="editar">
+                <p class="b_icono editar"></p>
+                <p>Editar</p>
+              </button>
+              <button class="eliminar">
                 <p class="b_icono eliminar"></p>
-                <p>Cancelar</p>
+                <p>Eliminar</p>
               </button>
             </div>
-            <div class="clearfix">	</div>
+            <div class="row">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Nombres y apellidos 
+                      <input type="checkbox">
+                    </th>
+                    <th>DNI
+                      <input type="checkbox">
+                    </th>
+                    <th>Teléfono
+                      <input type="checkbox">
+                    </th>
+                    <th>Celular
+                      <input type="checkbox">
+                    </th>
+                    <th>Fecha nac.
+                      <input type="checkbox">
+                    </th>
+                    <th>Dirección
+                      <input type="checkbox">
+                    </th>
+                    <th>Cargo
+                      <input type="checkbox">
+                    </th>
+                    <th>Editar
+                      <input type="checkbox">
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Nombres y apellidos</td>
+                    <td>DNI</td>
+                    <td>Teléfono</td>
+                    <td>Celular</td>
+                    <td>Fecha nac.</td>
+                    <td>Dirección</td>
+                    <td>Cargo</td>
+                    <td> 
+                      <input type="checkbox">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Nombres y apellidos</td>
+                    <td>DNI</td>
+                    <td>Teléfono</td>
+                    <td>Celular</td>
+                    <td>Fecha nac.</td>
+                    <td>Dirección</td>
+                    <td>Cargo</td>
+                    <td>
+                      <input type="checkbox">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </form>
+          <div class="row">
+            <div class="paginator"><a href="#">prev</a><a href="#">1</a><a href="#">2</a><a href="#">3</a><a href="#">next</a></div>
+          </div>
         </div>
       </section>
       <footer>
@@ -262,7 +200,6 @@
       <script src="js/jquery-ui-1.10.3.custom.js">	</script>
       <script src="js/bootstrap.min.js"></script>
       <script src="js/html5.js"></script>
-      <script src="js/menu.js"></script>
       <script src="js/behav.js"></script>
     </div>
   </body>

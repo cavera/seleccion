@@ -6,10 +6,14 @@ transition(prop, tiempo)
 	-moz-transition prop, tiempo
 	transition prop, tiempo
 
+fondo()
+	if cliente ='edyficar'
+		background-image url("../img/" + imagenPatron + ".png"), url("../img/" + imagenFondo + ".jpg")
+	else
+		background-image url("../img/" + imagenFondo + ".jpg")
 
 
-
-cliente = 'impaq'
+cliente = 'edyficar'
 @import(cliente)
 @import('form')
 // generales
@@ -17,9 +21,10 @@ cliente = 'impaq'
 body
 	background-color color_a
 	background-attachment fixed
-	background-image url("../img/" + imagenFondo + ".jpg")
-	background-repeat no-repeat
-	background-size 100% 100%
+	fondo()
+	// background-image url("../img/" + imagenFondo + ".jpg")
+	background-repeat repeticion
+	background-size tamano
 	font-family source_sans_prolight
 	font-size 16px
 	height auto
@@ -63,6 +68,7 @@ p
 		margin 5px
 
 #contenido
+	position relative
 	margin 104px 0 0 0
 	h2
 		font-size 1.3em
@@ -73,13 +79,15 @@ p
 
 	img
 		max-width 100%
-#grupoInfo, #portada
+#portada
 	position absolute
 	width 100%
 	overflow hidden
 
 #grupoInfo
-	top 200px
+	position absolute
+	top 50px
+	left 30px
 
 #portada
 	top 100px
@@ -117,6 +125,8 @@ p
 .infoIndicador
 	background rgba(black, alpha)
 	height 200px
+	margin-left 20px
+	margin-bottom 20px
 	.numero
 		color color_c
 		float left
@@ -133,7 +143,7 @@ p
 		font-size 1.8em
 		line-height 1em
 .infoIndicador:nth-child(2)
-	margin 0 30px
+	// margin 0 30px
 
 
 

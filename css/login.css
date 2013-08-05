@@ -299,9 +299,9 @@
   content: "@";
 }
 body {
-  background-image: url("../img/bg_e.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  background-image: url("../img/bg_20p.png"), url("../img/bg_e_l.jpg");
+  background-size: auto, 100% 100%;
+  background-repeat: repeat, no-repeat;
   background-attachment: fixed;
   font-family: source_sans_prolight;
   font-size: 16px;
@@ -354,7 +354,6 @@ body {
 }
 #login p {
   display: inline-block;
-  line-height: 0;
   font-size: 1.5em;
   color: #808080;
   position: relative;
@@ -372,7 +371,7 @@ button {
   border-right: none;
   text-align: center;
 }
-button:hover {
+button hover {
   background: #f9ab4f;
 }
 button[type="submit"] {
@@ -399,10 +398,10 @@ footer a {
   color: #fff;
   font-family: source_sans_prolight;
 }
-footer a:hover {
+footer a hover {
   font-family: source_sans_proregular;
 }
-footer a:visited {
+footer a visited {
   color: #fff;
 }
 footer .infoText {

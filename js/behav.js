@@ -33,35 +33,6 @@ $(function() {
 	}
 
 	cambiarCabeza(checkCabeza);
-// progress
-
-	var progressbar = $( "#progressbar" ),
-      progressLabel = $( ".progress-label" );
-    progressbar.progressbar({
-      value: false,
-      // create: function  () {
-      //   progressLabel.text( progressbar.progressbar( "value" ) + "%" );
-      // },
-      change: function() {
-        progressLabel.text( progressbar.progressbar( "value" ) + "%" );
-      },
-      complete: function() {
-        progressLabel.text( "Completo" );
-      }
-    });
-
-// temporal, solo para probar comportamiento
-	function progress() {
-      var val = progressbar.progressbar( "value" ) || 0;
-      progressbar.progressbar( "value", val + 1 );
-      var ancho = progressbar.width()- $('.ui-widget-header').width() + 3;
-      progressLabel.css('right',ancho+"px");
-      if ( val < 99 ) {
-        setTimeout( progress, 100 );
-      }
-    }
-    setTimeout( progress, 3000 );
-
 
 // editar filas
 

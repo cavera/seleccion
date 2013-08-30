@@ -1,0 +1,237 @@
+
+<!-- saved from url=(0044)home.jsp?menu=ig-2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <meta http-equiv="CACHE-CONTROL" content="NO-CACHE">
+        <meta http-equiv="PRAGMA" content="NO-CACHE">
+        <meta name="GOOGLEBOT" content="NOARCHIVE">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+        <link href="css/gris_simple/jquery-ui-1.10.3.custom.css" rel="stylesheet" media="screen">
+        <link href="css/layout.css" rel="stylesheet" media="screen">
+        <!--[if lt IE 9]>
+        <script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+        <![endif]-->
+
+        <title>APLICACION SELECCION PERSONAL  </title>
+    </head>
+    <body>
+        <div id="contenedor">
+
+            
+
+
+
+
+<header>
+    <div id="logo"></div>
+    <nav>
+        <ul id="menu">
+            <li class="item">
+                
+            </li>
+            <li class="item">
+                
+            </li>
+            <li id="espacioUsuario">
+                <div id="nombreUsuario">
+                    <p>MARTIN GARCIA PULACHE</p>
+                </div>
+                
+                <div id="invitaciones">
+                    
+                        <span class="letra22"><div id="timeExam">29:33</div></span>
+                    
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+
+            <section id="contenido">                
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+        
+        
+
+        
+        
+
+        
+        
+        
+        
+        
+        
+
+        
+                
+        
+        
+        
+
+        
+
+        
+        
+            
+        
+    
+
+    
+    
+
+
+
+
+
+<div class="elementos form_tabla">
+    <form id="form" autocomplete="off">  
+        <div class="row column">
+            <h2>IG-2</h2>
+        </div>
+        <div class="row">
+            <table class="tabla_small">
+                <thead>
+                    <tr>
+                        <th colspan="2">Pregunta 3 de 50</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                        <tr>
+                            <td>
+                                <div class="texto_izquierda">
+                                    <h4>3.- ¿Qué figura de la derecha continúa la serie de la izquierda?</h4>
+                                </div>
+                                <div class="texto_izquierda">
+                                    
+                                        
+                                        
+                                            <img src="img/sicotecnicas/img1.jpg">
+                                         
+                                    
+                                </div>
+                                <div class="texto_izquierda">
+                                        
+                                    
+
+                                    <div class="row columna_l">
+                                        
+                                        
+                                            <div class="row">
+                                                A.- <input type="radio" name="option" value="A" required="required"> 
+                                                <img src="img/sicotecnicas/img1A.jpg">
+                                            </div>
+                                            <div class="row">
+                                                B.- <input type="radio" name="option" value="B" required="required"> 
+                                                <img src="img/sicotecnicas/img1B.jpg">
+                                            </div>
+                                            <div class="row">
+                                                C.- <input type="radio" name="option" value="C" required="required"> 
+                                                <img src="img/sicotecnicas/img1C.jpg">
+                                            </div>
+                                            <div class="row">
+                                                D.- <input type="radio" name="option" value="D" required="required"> 
+                                                <img src="img/sicotecnicas/img1D.jpg">
+                                            </div>
+                                            <div class="row">
+                                                E.- <input type="radio" name="option" value="E" required="required"> 
+                                                <img src="img/sicotecnicas/img1E.jpg">
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    
+                </tbody>
+            </table>
+        </div>
+        <div class="row columna_m">
+            <button name="actions" value="Siguiente" formmethod="POST">
+                <p class="b_icono next"></p>
+                <p>Siguiente</p>
+            </button>
+        </div>
+        <input type="hidden" name="minute" id="minute" value="29">
+        <input type="hidden" name="second" id="second" value="33">
+    </form>
+</div>
+<script type="text/javascript">
+    var seconds = 51;
+    var minutes = 29;
+
+    window.onload = function() {
+        startTime();
+    }
+    var startTime = function() {
+        seconds--;
+    
+        setTimeout("startTime()", 1000);
+
+        if (seconds < 0) {
+            seconds = 59;
+            minutes--;
+    
+            if (minutes < 10) {
+                minutes = '0' + minutes
+            }
+        }
+        if (seconds < 10) {
+            seconds = '0' + seconds
+        }
+        if (seconds >= 0 && minutes >= 0) {
+            var val = document.getElementById("timeExam");
+            val.innerHTML = minutes + ':' + seconds;
+            document.getElementById('minute').value = minutes;
+            document.getElementById('second').value = seconds;
+        }
+
+
+        if (seconds == 0 && minutes == 0) {
+    
+    
+            location = "/sep/home.jsp?menu=portal";
+        }
+    }
+
+</script>
+
+            </section>
+            <footer>
+                <div class="icono">
+                    <p class="typicn info"></p>
+                </div><a href="mailto:info@impaq.pe">info: info@impaq.pe</a>
+                <p class="infoText"></p>
+            </footer>
+            <script src="js/jquery-1.9.1.js"></script>
+            <script src="js/jquery-ui-1.10.3.custom.js"></script>
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/html5.js"></script>
+            <script src="js/behav.js"></script>
+            <script src="js/jquery.countdown.js"></script>
+        </div>
+    
+</body></html>

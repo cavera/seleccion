@@ -311,6 +311,10 @@
 .form_tabla h3 {
   color: #fff;
 }
+.form_tabla img {
+  border: 1px #ccc solid;
+  overflow: hidden;
+}
 label {
   line-height: 1.5em;
   padding-top: 5px;
@@ -873,8 +877,7 @@ nav {
 .item:hover .i_cuatro:after {
   left: 670px;
 }
-.item:hover .submenu1,
-.item:hover {
+.item:hover .submenu1 {
   height: 100px;
 }
 li#espacioUsuario {

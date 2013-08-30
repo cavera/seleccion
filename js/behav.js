@@ -1,8 +1,10 @@
 $(function() {
 	$('.infoIndicador').hide();
-	$('.infoIndicador:nth-child(1)').fadeIn(500);
-	$('.infoIndicador:nth-child(2)').delay(100).fadeIn(500);
-	$('.infoIndicador:nth-child(3)').delay(200).fadeIn(500);
+
+	$.each($('.infoIndicador'), function(index) {
+		 $(this).delay(parseInt(index * 150)).fadeIn(500);
+	});
+
 
 
 // menu

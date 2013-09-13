@@ -1,6 +1,10 @@
 @import('sourcesans')
 @import('typicons')
 
+cliente = 'impaq'
+@import(cliente)
+@import('form')
+
 transition(prop, tiempo)
 	-webkit-transition prop, tiempo
 	-moz-transition prop, tiempo
@@ -13,9 +17,6 @@ fondo()
 		background-image url("../img/" + imagenFondo + ".jpg")
 
 
-cliente = 'edyficar'
-@import(cliente)
-@import('form')
 // generales
 
 body
@@ -70,6 +71,7 @@ p
 #contenido
 	position relative
 	margin 104px 0 0 0
+	min-height 500px
 	h2
 		font-size 1.3em
 		background rgba(black, alpha)
@@ -79,6 +81,7 @@ p
 
 	img
 		max-width 100%
+
 #portada
 	position absolute
 	width 100%

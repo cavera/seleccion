@@ -324,7 +324,7 @@ label [class*="span"] {
   float: none;
 }
 fieldset {
-  border-top: #007342 1px solid;
+  border-top: #8d181a 1px solid;
 }
 fieldset .columna_l,
 fieldset .columna_r,
@@ -354,7 +354,7 @@ select {
   cursor: pointer;
 }
 .grupo_pruebas {
-  border-top: #007342 solid 2px;
+  border-top: #8d181a solid 2px;
   background: rgba(255,255,255,0.8);
   overflow: hidden;
   width: 800px;
@@ -379,7 +379,7 @@ form h3 {
   margin: 0;
   padding: 0;
   text-align: center;
-  color: #007342;
+  color: #8d181a;
 }
 form label {
   text-align: right;
@@ -417,7 +417,7 @@ form select:focus {
   color: #000;
 }
 .newform h3 {
-  border-bottom: rgba(0,115,66,0.3) 1px solid;
+  border-bottom: rgba(141,24,26,0.3) 1px solid;
 }
 .row {
   padding: 0;
@@ -478,9 +478,7 @@ button {
   margin: 0 10px;
   padding: 2px 0 0 1px;
   text-align: center;
-  -webkit-transition: all, 0.2s;
-  -moz-transition: all, 0.2s;
-  transition: all, 0.2s;
+  transition: all 0.2s;
 }
 button p {
   display: inline;
@@ -492,9 +490,7 @@ button p:nth-child(2) {
   line-height: 10px;
 }
 button .b_icono:before {
-  -webkit-transition: all, 0.3s;
-  -moz-transition: all, 0.3s;
-  transition: all, 0.3s;
+  transition: all 0.3s;
   -o-transform: scale(1);
   -webkit-font-smoothing: antialiased;
   border-right: rgba(255,255,255,0.4) solid 1px;
@@ -608,7 +604,7 @@ td {
 }
 td[contenteditable='true']:focus {
   background: #fff8d1;
-  color: #007342;
+  color: #8d181a;
 }
 th:first-child,
 td:first-child {
@@ -707,11 +703,11 @@ th.order2 a {
   font-size: 22px;
 }
 body {
-  background-color: #007342;
+  background-color: #8d181a;
   background-attachment: fixed;
-  background-image: url("../img/bg_20p.png"), url("../img/bg_e_l.jpg");
-  background-repeat: repeat, no-repeat;
-  background-size: auto, 100% 100%;
+  background-image: url("../img/imagenPatron.png"), url("../img/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   font-family: source_sans_prolight;
   font-size: 16px;
   height: auto;
@@ -752,12 +748,12 @@ header {
   z-index: 250;
 }
 #logo {
-  background: #007342;
+  background: #8d181a;
   float: left;
   height: 100px;
   width: 220px;
   text-indent: -1000;
-  background-image: url("../img/logo_e.png");
+  background-image: url("../img/logo_i.png");
   background-repeat: no-repeat;
   background-position: 20px center;
   background-size: 80%;
@@ -945,6 +941,7 @@ li#espacioUsuario a:hover {
 #contenido {
   position: relative;
   margin: 104px 0 0 0;
+  min-height: 500px;
 }
 #contenido h2 {
   font-size: 1.3em;
@@ -1057,7 +1054,7 @@ footer a:visited {
 .icono {
   width: 30px;
   height: 30px;
-  background: rgba(0,115,66,0.8);
+  background: rgba(141,24,26,0.8);
   font-size: 0.5em;
   float: left;
   line-height: 40px;

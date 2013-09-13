@@ -299,6 +299,7 @@
   content: "@";
 }
 body {
+  background-color: #007342;
   background-image: url("../img/bg_20p.png"), url("../img/bg_e_l.jpg");
   background-size: auto, 100% 100%;
   background-repeat: repeat, no-repeat;
